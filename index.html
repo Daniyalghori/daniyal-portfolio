@@ -1,29 +1,37 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Character Encoding -->
+    <!-- ==================== BASIC META ==================== -->
+
     <meta charset="UTF-8" />
 
-    <!-- Responsive Website -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Website Title -->
-    <title>Daniyal Ghori | AI & Data Science Portfolio</title>
-
-    <!-- Website Description -->
     <meta
       name="description"
       content="Personal Portfolio of Daniyal Mohammed Nadeem Ghori - AI & Data Science Engineering Student."
     />
 
-    <!-- Favicon -->
+    <meta name="author" content="Daniyal Mohammed Nadeem Ghori" />
+
+    <meta name="robots" content="index, follow" />
+
+    <!-- Website Title -->
+
+    <title>Daniyal Ghori | AI & Data Science Portfolio</title>
+
+    <!-- ==================== FAVICON ==================== -->
+
     <link rel="icon" type="image/png" href="assets/images/favicon.png" />
 
-    <!-- CSS -->
+    <!-- ==================== CSS ==================== -->
+
     <link rel="stylesheet" href="style.css" />
 
-    <!-- Google Fonts -->
+    <!-- ==================== GOOGLE FONTS ==================== -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <link
@@ -31,1588 +39,1418 @@
       rel="stylesheet"
     />
 
-    <!-- Font Awesome Icons -->
+    <!-- ==================== FONT AWESOME ==================== -->
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
 
-    <!-- AOS Animation CSS -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/aos@2.3.4/dist/aos.css"
-    />
-</head>
+    <!-- ==================== AOS ==================== -->
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  </head>
 
   <body>
-    <!-- ==================== HEADER ==================== -->
-<!-- ==================== NAVBAR ==================== -->
+    <!-- ==================== SCROLL PROGRESS ==================== -->
 
-<header>
-
-  <!-- ==================== NAVBAR ==================== -->
-
-<nav class="navbar">
-
-    <div class="container">
-
-        <!-- Logo -->
-        <div class="logo">
-            Daniyal Ghori
-        </div>
-
-
-        <!-- Navigation Links -->
-        <ul class="nav-links">
-
-            <li><a href="#home">Home</a></li>
-
-            <li><a href="#about">About</a></li>
-
-            <li><a href="#skills">Skills</a></li>
-
-            <li><a href="#exploring">Exploring</a></li>
-
-            <li><a href="#projects">Projects</a></li>
-
-            <li><a href="#achievements">Achievements</a></li>
-
-            <li><a href="#internships">Internships</a></li>
-
-            <li><a href="#certifications">Certifications</a></li>
-
-            <li><a href="#contact">Contact</a></li>
-
-        </ul>
-
-
-        <!-- Hamburger Menu -->
-        <div class="menu-toggle" id="menu-toggle">
-
-            <span></span>
-            <span></span>
-            <span></span>
-
-        </div>
-
+    <div class="scroll-progress-container" aria-hidden="true">
+      <div id="scroll-progress" class="scroll-progress"></div>
     </div>
+    <!-- =========================================================
+     HEADER / NAVIGATION
+========================================================= -->
 
-</nav>
+    <header class="site-header">
+      <nav class="navbar" aria-label="Main Navigation">
+        <div class="container">
+          <!-- Logo -->
 
-</header>
+          <a href="#home" class="logo" aria-label="Daniyal Ghori Home">
+            Daniyal Ghori
+          </a>
 
-    <!-- ==================== MAIN ==================== -->
+          <!-- Navigation Links -->
+
+          <ul class="nav-links" id="primary-navigation">
+            <li>
+              <a href="#home"> Home </a>
+            </li>
+
+            <li>
+              <a href="#about"> About </a>
+            </li>
+
+            <li>
+              <a href="#skills"> Skills </a>
+            </li>
+
+            <li>
+              <a href="#exploring"> Exploring </a>
+            </li>
+
+            <li>
+              <a href="#projects"> Projects </a>
+            </li>
+
+            <li>
+              <a href="#education"> Education </a>
+            </li>
+
+            <li>
+              <a href="#achievements"> Achievements </a>
+            </li>
+
+            <li>
+              <a href="#internships"> Internships </a>
+            </li>
+
+            <li>
+              <a href="#certifications"> Certifications </a>
+            </li>
+
+            <li>
+              <a href="#contact"> Contact </a>
+            </li>
+          </ul>
+
+          <!-- Hamburger Menu -->
+
+          <button
+            class="menu-toggle"
+            id="menu-toggle"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="primary-navigation"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- =========================================================
+     MAIN CONTENT
+========================================================= -->
 
     <main>
-<!-- ==================== HERO SECTION ==================== -->
+      <!-- =========================================================
+     HERO SECTION
+========================================================= -->
 
-<section id="home" class="hero">
-
-    <div class="container">
-
-        <div class="hero-content">
-
-            <!-- ==================== HERO TEXT ==================== -->
+      <section id="home" class="hero-section" aria-labelledby="hero-title">
+        <div class="container">
+          <div class="hero-content">
+            <!-- HERO TEXT -->
 
             <div class="hero-text">
+              <p class="greeting">Hello, I'm</p>
 
-                <p class="greeting">
-                    Hello, I'm
-                </p>
+              <h1 id="hero-title">
+                Daniyal Mohammed
+                <br />
+                Nadeem Ghori
+              </h1>
 
-                <h1>
-                    Daniyal Mohammed
-                    <br>
-                    Nadeem Ghori
-                </h1>
+              <div class="hero-role">
+                <span class="role-prefix"> AI & Data Science Engineer </span>
 
-                <div class="hero-role">
+                <span class="role-divider">|</span>
 
-                    <span class="role-prefix">
-                        AI & Data Science Engineer
-                    </span>
+                <span class="typing-wrapper">
+                  <span id="typing-text"></span>
+                  <span class="typing-cursor"></span>
+                </span>
+              </div>
 
-                    <span class="role-divider">|</span>
+              <p class="hero-description">
+                I build intelligent applications using Artificial Intelligence,
+                Machine Learning, Generative AI, and Full Stack Development to
+                solve real-world problems.
+              </p>
 
-                    <span class="typing-text">
-                        <span id="typing-text"></span>
-                    </span>
+              <!-- HERO BUTTONS -->
 
-                </div>
+              <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">
+                  <i class="fa-solid fa-code" aria-hidden="true"></i>
 
-                <p class="hero-description">
-                    I build intelligent applications using Artificial Intelligence,
-                    Machine Learning, Generative AI, and Full Stack Development
-                    to solve real-world problems.
-                </p>
-
-
-                <!-- ==================== HERO BUTTONS ==================== -->
-
-<div class="hero-buttons">
-
-    <!-- Primary CTA -->
-
-    <a
-        href="#projects"
-        class="btn btn-primary"
-    >
-        <i class="fa-solid fa-code"></i>
-        Explore My Work
-    </a>
-
-
-    <!-- Resume CTA -->
-
-    <a
-        href="assets/resume/Daniyal_Resume.pdf"
-        class="btn btn-secondary"
-        download="Daniyal_Resume.pdf"
-    >
-        <i class="fa-solid fa-file-arrow-down"></i>
-        Download Resume
-    </a>
-
-
-    <!-- Contact CTA -->
-
-    <a
-        href="#contact"
-        class="btn btn-outline"
-    >
-        <i class="fa-solid fa-paper-plane"></i>
-        Let's Connect
-    </a>
-
-</div>
-
-
-                <!-- ==================== SOCIAL LINKS ==================== -->
-
-                <div class="social-icons">
-
-                    <a
-                        href="https://github.com/Daniyalghori"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="GitHub"
-                    >
-                        <i class="fab fa-github"></i>
-                    </a>
-
-                    <a
-                        href="https://www.linkedin.com/in/daniyal-ghori-335b0337a/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="LinkedIn"
-                    >
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-
-                    <a
-                        href="mailto:daniyalghori96@gmail.com"
-                        aria-label="Email"
-                    >
-                        <i class="fas fa-envelope"></i>
-                    </a>
-
-                </div>
-
-
-                <!-- ==================== HERO STATS ==================== -->
-
-                <div class="hero-stats">
-
-                    <div class="stat">
-
-                        <h3>9.23</h3>
-
-                        <p>Semester V CGPA</p>
-
-                    </div>
-
-                    <div class="stat">
-
-                        <h3>4+</h3>
-
-                        <p>Major Projects</p>
-
-                    </div>
-
-                    <div class="stat">
-
-                        <h3>10+</h3>
-
-                        <p>Technologies</p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- ==================== HERO VISUAL ==================== -->
-
-            <div class="hero-image">
-
-                <div class="hero-image-frame">
-
-                    <div class="ai-orbit orbit-one"></div>
-
-                    <div class="ai-orbit orbit-two"></div>
-
-                    <div class="ai-node node-one">
-                        <i class="fa-solid fa-brain"></i>
-                    </div>
-
-                    <div class="ai-node node-two">
-                        <i class="fa-solid fa-microchip"></i>
-                    </div>
-
-                    <div class="ai-node node-three">
-                        <i class="fa-solid fa-code"></i>
-                    </div>
-
-                    <img
-                        src="assets/images/photo.png"
-                        alt="Daniyal Mohammed Nadeem Ghori"
-                        class="profile-image"
-                    >
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-    <!-- ==================== ABOUT SECTION ==================== -->
-
-<section id="about" data-aos="fade-up">
-
-    <div class="container">
-
-        <h2 class="section-title">About Me</h2>
-
-        <div class="about-content">
-
-            <div class="about-text">
-
-                <h3>Who Am I?</h3>
-
-                <p>
-                    Hello! I'm <strong>Daniyal Mohammed Nadeem Ghori</strong>,
-                    a Final Year Bachelor of Engineering student specializing in
-                    <strong>Artificial Intelligence & Data Science</strong> at
-                    <strong>Rizvi College of Engineering</strong>, affiliated
-                    with the <strong>University of Mumbai</strong>.
-                </p>
-
-                <p>
-                    I am passionate about designing and developing intelligent,
-                    user-centric software solutions using Artificial
-                    Intelligence, Machine Learning, Full Stack Development, and
-                    Cloud Computing. I enjoy transforming innovative ideas into
-                    impactful real-world applications while continuously
-                    exploring emerging technologies and enhancing my technical
-                    expertise.
-                </p>
-
-                <div class="about-info">
-
-                    <div class="info-item">
-                        <strong>🎓 Degree:</strong><br>
-                        B.E. Artificial Intelligence & Data Science
-                    </div>
-
-                    <div class="info-item">
-                        <strong>🏫 College:</strong><br>
-                        Rizvi College of Engineering
-                    </div>
-
-                    <div class="info-item">
-                        <strong>🎯 University:</strong><br>
-                        University of Mumbai
-                    </div>
-
-                    <div class="info-item">
-                        <strong>📈 Semester VI GPA:</strong><br>
-                        9.74 / 10
-                    </div>
-
-                    <div class="info-item">
-                        <strong>💻 Areas of Interest:</strong><br>
-                        AI • Machine Learning • Full Stack Development • Cloud Computing
-                    </div>
-
-                    <div class="info-item">
-                        <strong>📍 Location:</strong><br>
-                        Mumbai, Maharashtra, India
-                    </div>
-
-                </div>
-
-                <a
-                    href="./assets/resume/Daniyal_Resume.pdf"
-                    class="btn btn-primary"
-                    download
-                >
-                    <i class="fa-solid fa-file-arrow-down"></i>
-                    Download Resume
+                  <span> Explore My Work </span>
                 </a>
 
+                <a
+                  href="assets/resume/Daniyal_Resume.pdf"
+                  class="btn btn-secondary"
+                  download="Daniyal_Resume.pdf"
+                >
+                  <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i>
+
+                  <span> Download Resume </span>
+                </a>
+
+                <a href="#contact" class="btn btn-outline">
+                  <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+
+                  <span> Let's Connect </span>
+                </a>
+              </div>
+
+              <!-- SOCIAL LINKS -->
+
+              <div class="social-icons" aria-label="Social media links">
+                <a
+                  href="https://github.com/Daniyalghori"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visit Daniyal's GitHub profile"
+                >
+                  <i class="fab fa-github" aria-hidden="true"></i>
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/daniyal-ghori-335b0337a/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visit Daniyal's LinkedIn profile"
+                >
+                  <i class="fab fa-linkedin" aria-hidden="true"></i>
+                </a>
+
+                <a
+                  href="mailto:daniyalghori96@gmail.com"
+                  aria-label="Send an email to Daniyal"
+                >
+                  <i class="fas fa-envelope" aria-hidden="true"></i>
+                </a>
+              </div>
+
+              <!-- HERO STATS -->
+
+              <div class="hero-stats">
+                <div class="stat">
+                  <h3>9.74</h3>
+
+                  <p>Semester VI GPA</p>
+                </div>
+
+                <div class="stat">
+                  <h3>4+</h3>
+
+                  <p>Major Projects</p>
+                </div>
+
+                <div class="stat">
+                  <h3>10+</h3>
+
+                  <p>Technologies</p>
+                </div>
+              </div>
             </div>
 
+            <!-- HERO VISUAL -->
+
+            <div class="hero-image" aria-label="AI themed profile visual">
+              <div class="hero-image-frame">
+                <div class="ai-orbit orbit-one" aria-hidden="true"></div>
+
+                <div class="ai-orbit orbit-two" aria-hidden="true"></div>
+
+                <div class="ai-node node-one" aria-hidden="true">
+                  <i class="fa-solid fa-brain"></i>
+                </div>
+
+                <div class="ai-node node-two" aria-hidden="true">
+                  <i class="fa-solid fa-microchip"></i>
+                </div>
+
+                <div class="ai-node node-three" aria-hidden="true">
+                  <i class="fa-solid fa-code"></i>
+                </div>
+
+                <img
+                  src="assets/images/photo.png"
+                  alt="Portrait of Daniyal Mohammed Nadeem Ghori"
+                  class="profile-image"
+                  loading="eager"
+                />
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
 
-    </div>
+      <!-- =========================================================
+     ABOUT SECTION
+========================================================= -->
 
-</section>
+      <section id="about" class="about-section" aria-labelledby="about-title">
+        <div class="container">
+          <h2 id="about-title" class="section-title">About Me</h2>
 
-<!-- ==================== SKILLS SECTION ==================== -->
+          <div class="about-content">
+            <div class="about-text">
+              <h3>Who Am I?</h3>
 
-<section id="skills" data-aos="fade-up">
+              <p>
+                Hello! I'm
+                <strong>Daniyal Mohammed Nadeem Ghori</strong>, a Final Year
+                Bachelor of Engineering student specializing in
+                <strong>Artificial Intelligence & Data Science</strong>
+                at
+                <strong>Rizvi College of Engineering</strong>, affiliated with
+                the <strong>University of Mumbai</strong>.
+              </p>
 
-    <div class="container">
+              <p>
+                I am passionate about designing and developing intelligent,
+                user-centric software solutions using Artificial Intelligence,
+                Machine Learning, Full Stack Development, and Cloud Computing. I
+                enjoy transforming innovative ideas into impactful real-world
+                applications while continuously exploring emerging technologies
+                and enhancing my technical expertise.
+              </p>
 
-        <h2 class="section-title">Technical Skills</h2>
+              <div class="about-info">
+                <div class="info-item">
+                  <strong>🎓 Degree:</strong>
+                  <br />
 
-        <p class="section-subtitle">
+                  B.E. Artificial Intelligence & Data Science
+                </div>
+
+                <div class="info-item">
+                  <strong>🏫 College:</strong>
+                  <br />
+
+                  Rizvi College of Engineering
+                </div>
+
+                <div class="info-item">
+                  <strong>🎯 University:</strong>
+                  <br />
+
+                  University of Mumbai
+                </div>
+
+                <div class="info-item">
+                  <strong>📈 Semester VI GPA:</strong>
+                  <br />
+
+                  9.74
+                </div>
+
+                <div class="info-item">
+                  <strong>💻 Areas of Interest:</strong>
+                  <br />
+
+                  AI • Machine Learning • Full Stack Development • Cloud
+                  Computing
+                </div>
+
+                <div class="info-item">
+                  <strong>📍 Location:</strong>
+                  <br />
+
+                  Mumbai, Maharashtra, India
+                </div>
+              </div>
+
+              <a
+                href="./assets/resume/Daniyal_Resume.pdf"
+                class="btn btn-primary"
+                download
+              >
+                <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i>
+
+                <span> Download Resume </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+     SKILLS SECTION
+========================================================= -->
+
+      <section
+        id="skills"
+        class="skills-section"
+        aria-labelledby="skills-title"
+      >
+        <div class="container">
+          <h2 id="skills-title" class="section-title">Technical Skills</h2>
+
+          <p class="section-subtitle">
             A focused technical toolkit spanning Artificial Intelligence,
             Machine Learning, Generative AI, programming, and web development.
-        </p>
+          </p>
 
+          <div class="skills-category-grid">
+            <!-- AI & MACHINE LEARNING -->
 
-        <div class="skills-category-grid">
-
-
-            <!-- ==================== AI & MACHINE LEARNING ==================== -->
-
-            <div class="skill-category">
-
-                <div class="skill-category-header">
-
-                    <div class="skill-category-icon">
-                        <i class="fa-solid fa-brain"></i>
-                    </div>
-
-                    <div>
-                        <h3>AI & Machine Learning</h3>
-
-                        <p>
-                            Building intelligent systems and
-                            machine learning solutions.
-                        </p>
-                    </div>
-
+            <article class="skill-category">
+              <div class="skill-category-header">
+                <div class="skill-category-icon" aria-hidden="true">
+                  <i class="fa-solid fa-brain"></i>
                 </div>
 
+                <div>
+                  <h3>AI & Machine Learning</h3>
 
-                <div class="skill-items">
+                  <p>
+                    Building intelligent systems and machine learning solutions.
+                  </p>
+                </div>
+              </div>
 
-                    <div class="skill-item">
+              <div class="skill-items">
+                <div class="skill-item">
+                  <div class="skill-item-top">
+                    <span> Machine Learning </span>
 
-                        <div class="skill-item-top">
-                            <span>Machine Learning</span>
-                            <span>85%</span>
-                        </div>
+                    <span> 85% </span>
+                  </div>
 
-                        <div class="skill-bar">
-                            <div
-                                class="skill-progress"
-                                style="width: 85%;">
-                            </div>
-                        </div>
+                  <div
+                    class="skill-bar"
+                    role="progressbar"
+                    aria-label="Machine Learning skill level"
+                    aria-valuenow="85"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div class="skill-progress" style="width: 85%"></div>
+                  </div>
+                </div>
+              </div>
+            </article>
 
-                    </div>
+            <!-- GENERATIVE AI -->
 
+            <article class="skill-category">
+              <div class="skill-category-header">
+                <div class="skill-category-icon" aria-hidden="true">
+                  <i class="fa-solid fa-wand-magic-sparkles"></i>
                 </div>
 
-            </div>
+                <div>
+                  <h3>Generative AI</h3>
 
+                  <p>
+                    Working with LLMs, AI applications, and prompt engineering.
+                  </p>
+                </div>
+              </div>
 
+              <div class="skill-items">
+                <div class="skill-item">
+                  <div class="skill-item-top">
+                    <span> Prompting </span>
 
-            <!-- ==================== GENERATIVE AI ==================== -->
+                    <span> 95% </span>
+                  </div>
 
-            <div class="skill-category">
-
-                <div class="skill-category-header">
-
-                    <div class="skill-category-icon">
-                        <i class="fa-solid fa-wand-magic-sparkles"></i>
-                    </div>
-
-                    <div>
-                        <h3>Generative AI</h3>
-
-                        <p>
-                            Working with LLMs, AI applications,
-                            and prompt engineering.
-                        </p>
-                    </div>
-
+                  <div
+                    class="skill-bar"
+                    role="progressbar"
+                    aria-label="Prompting skill level"
+                    aria-valuenow="95"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div class="skill-progress" style="width: 95%"></div>
+                  </div>
                 </div>
 
+                <div class="skill-item">
+                  <div class="skill-item-top">
+                    <span> Generative AI </span>
 
-                <div class="skill-items">
+                    <span> 90% </span>
+                  </div>
 
-                    <div class="skill-item">
+                  <div
+                    class="skill-bar"
+                    role="progressbar"
+                    aria-label="Generative AI skill level"
+                    aria-valuenow="90"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div class="skill-progress" style="width: 90%"></div>
+                  </div>
+                </div>
+              </div>
+            </article>
 
-                        <div class="skill-item-top">
-                            <span>Prompting</span>
-                            <span>95%</span>
-                        </div>
+            <!-- PROGRAMMING -->
 
-                        <div class="skill-bar">
-                            <div
-                                class="skill-progress"
-                                style="width: 95%;">
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                    <div class="skill-item">
-
-                        <div class="skill-item-top">
-                            <span>Generative AI</span>
-                            <span>90%</span>
-                        </div>
-
-                        <div class="skill-bar">
-                            <div
-                                class="skill-progress"
-                                style="width: 90%;">
-                            </div>
-                        </div>
-
-                    </div>
-
+            <article class="skill-category">
+              <div class="skill-category-header">
+                <div class="skill-category-icon" aria-hidden="true">
+                  <i class="fa-solid fa-code"></i>
                 </div>
 
-            </div>
+                <div>
+                  <h3>Programming</h3>
 
+                  <p>Core programming languages used across my projects.</p>
+                </div>
+              </div>
 
+              <div class="skill-tags">
+                <span>Python</span>
+                <span>Java</span>
+                <span>C</span>
+              </div>
 
-            <!-- ==================== PROGRAMMING ==================== -->
+              <div class="skill-items">
+                <div class="skill-item">
+                  <div class="skill-item-top">
+                    <span> Python </span>
 
-            <div class="skill-category">
+                    <span> 90% </span>
+                  </div>
 
-                <div class="skill-category-header">
+                  <div
+                    class="skill-bar"
+                    role="progressbar"
+                    aria-label="Python skill level"
+                    aria-valuenow="90"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div class="skill-progress" style="width: 90%"></div>
+                  </div>
+                </div>
+              </div>
+            </article>
 
-                    <div class="skill-category-icon">
-                        <i class="fa-solid fa-code"></i>
-                    </div>
+            <!-- WEB DEVELOPMENT -->
 
-                    <div>
-                        <h3>Programming</h3>
-
-                        <p>
-                            Core programming languages used
-                            across my projects.
-                        </p>
-                    </div>
-
+            <article class="skill-category">
+              <div class="skill-category-header">
+                <div class="skill-category-icon" aria-hidden="true">
+                  <i class="fa-solid fa-globe"></i>
                 </div>
 
+                <div>
+                  <h3>Web Development</h3>
 
-                <div class="skill-tags">
-
-                    <span>Python</span>
-
-                    <span>Java</span>
-
-                    <span>C</span>
-
+                  <p>Building responsive and interactive web applications.</p>
                 </div>
+              </div>
 
+              <div class="skill-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
 
-                <div class="skill-items">
-
-                    <div class="skill-item">
-
-                        <div class="skill-item-top">
-                            <span>Python</span>
-                            <span>90%</span>
-                        </div>
-
-                        <div class="skill-bar">
-                            <div
-                                class="skill-progress"
-                                style="width: 90%;">
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- ==================== WEB DEVELOPMENT ==================== -->
-
-            <div class="skill-category">
-
-                <div class="skill-category-header">
-
-                    <div class="skill-category-icon">
-                        <i class="fa-solid fa-globe"></i>
-                    </div>
-
-                    <div>
-                        <h3>Web Development</h3>
-
-                        <p>
-                            Building responsive and interactive
-                            web applications.
-                        </p>
-                    </div>
-
-                </div>
-
-
-                <div class="skill-tags">
-
+              <div class="skill-items">
+                <div class="skill-item">
+                  <div class="skill-item-top">
                     <span>HTML</span>
+                    <span>95%</span>
+                  </div>
 
+                  <div
+                    class="skill-bar"
+                    role="progressbar"
+                    aria-label="HTML skill level"
+                    aria-valuenow="95"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div class="skill-progress" style="width: 95%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="skill-item-top">
                     <span>CSS</span>
+                    <span>90%</span>
+                  </div>
 
+                  <div
+                    class="skill-bar"
+                    role="progressbar"
+                    aria-label="CSS skill level"
+                    aria-valuenow="90"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div class="skill-progress" style="width: 90%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="skill-item-top">
                     <span>JavaScript</span>
+                    <span>85%</span>
+                  </div>
 
+                  <div
+                    class="skill-bar"
+                    role="progressbar"
+                    aria-label="JavaScript skill level"
+                    aria-valuenow="85"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div class="skill-progress" style="width: 85%"></div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- DATA & DATABASES -->
+
+            <article class="skill-category">
+              <div class="skill-category-header">
+                <div class="skill-category-icon" aria-hidden="true">
+                  <i class="fa-solid fa-database"></i>
                 </div>
 
+                <div>
+                  <h3>Data & Databases</h3>
 
-                <div class="skill-items">
-
-                    <div class="skill-item">
-
-                        <div class="skill-item-top">
-                            <span>HTML</span>
-                            <span>95%</span>
-                        </div>
-
-                        <div class="skill-bar">
-                            <div
-                                class="skill-progress"
-                                style="width: 95%;">
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                    <div class="skill-item">
-
-                        <div class="skill-item-top">
-                            <span>CSS</span>
-                            <span>90%</span>
-                        </div>
-
-                        <div class="skill-bar">
-                            <div
-                                class="skill-progress"
-                                style="width: 90%;">
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                    <div class="skill-item">
-
-                        <div class="skill-item-top">
-                            <span>JavaScript</span>
-                            <span>85%</span>
-                        </div>
-
-                        <div class="skill-bar">
-                            <div
-                                class="skill-progress"
-                                style="width: 85%;">
-                            </div>
-                        </div>
-
-                    </div>
-
+                  <p>Working with structured data and database technologies.</p>
                 </div>
+              </div>
 
-            </div>
+              <div class="skill-items">
+                <div class="skill-item">
+                  <div class="skill-item-top">
+                    <span> SQL </span>
 
+                    <span> 85% </span>
+                  </div>
 
-
-            <!-- ==================== DATA & DATABASES ==================== -->
-
-            <div class="skill-category">
-
-                <div class="skill-category-header">
-
-                    <div class="skill-category-icon">
-                        <i class="fa-solid fa-database"></i>
-                    </div>
-
-                    <div>
-                        <h3>Data & Databases</h3>
-
-                        <p>
-                            Working with structured data and
-                            database technologies.
-                        </p>
-                    </div>
-
+                  <div
+                    class="skill-bar"
+                    role="progressbar"
+                    aria-label="SQL skill level"
+                    aria-valuenow="85"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div class="skill-progress" style="width: 85%"></div>
+                  </div>
                 </div>
-
-
-                <div class="skill-items">
-
-                    <div class="skill-item">
-
-                        <div class="skill-item-top">
-                            <span>SQL</span>
-                            <span>85%</span>
-                        </div>
-
-                        <div class="skill-bar">
-                            <div
-                                class="skill-progress"
-                                style="width: 85%;">
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
+              </div>
+            </article>
+          </div>
         </div>
+      </section>
 
-    </div>
+      <!-- =========================================================
+     EXPLORING SECTION
+========================================================= -->
 
-</section>
-
-<!-- ==================== CURRENTLY EXPLORING SECTION ==================== -->
-
-<section id="exploring" data-aos="fade-up">
-
-    <div class="container">
-
-        <div class="exploring-header">
-
+      <section
+        id="exploring"
+        class="exploring-section"
+        aria-labelledby="exploring-title"
+      >
+        <div class="container">
+          <div class="exploring-header">
             <div>
+              <span class="section-label"> CURRENTLY LEARNING </span>
 
-                <span class="section-label">
-                    CURRENTLY LEARNING
-                </span>
+              <h2 id="exploring-title" class="section-title">
+                Currently Exploring
+              </h2>
 
-                <h2 class="section-title">
-                    Currently Exploring
-                </h2>
-
-                <p class="section-subtitle">
-                    Continuously exploring emerging technologies and
-                    practical approaches in Artificial Intelligence,
-                    Generative AI, and intelligent software systems.
-                </p>
-
+              <p class="section-subtitle">
+                Continuously exploring emerging technologies and practical
+                approaches in Artificial Intelligence, Generative AI, and
+                intelligent software systems.
+              </p>
             </div>
 
             <div class="exploring-status">
+              <span class="status-dot" aria-hidden="true"></span>
 
-                <span class="status-dot"></span>
-
-                <span>
-                    Always Learning
-                </span>
-
+              <span> Always Learning </span>
             </div>
+          </div>
 
+          <div class="exploring-grid">
+            <article class="exploring-card">
+              <div class="exploring-icon" aria-hidden="true">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+              </div>
+
+              <div class="exploring-content">
+                <span class="exploring-number"> 01 </span>
+
+                <h3>Generative AI & LLMs</h3>
+
+                <p>
+                  Exploring Large Language Models, prompt engineering,
+                  AI-powered applications, and practical techniques for building
+                  intelligent user experiences.
+                </p>
+
+                <div class="exploring-tags">
+                  <span>LLMs</span>
+                  <span>Prompting</span>
+                  <span>GenAI</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="exploring-card">
+              <div class="exploring-icon" aria-hidden="true">
+                <i class="fa-solid fa-robot"></i>
+              </div>
+
+              <div class="exploring-content">
+                <span class="exploring-number"> 02 </span>
+
+                <h3>AI Agents</h3>
+
+                <p>
+                  Learning how autonomous AI systems can combine reasoning,
+                  tools, models, and workflows to perform multi-step tasks.
+                </p>
+
+                <div class="exploring-tags">
+                  <span>AI Agents</span>
+                  <span>Workflows</span>
+                  <span>Automation</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="exploring-card">
+              <div class="exploring-icon" aria-hidden="true">
+                <i class="fa-solid fa-diagram-project"></i>
+              </div>
+
+              <div class="exploring-content">
+                <span class="exploring-number"> 03 </span>
+
+                <h3>Model Context Protocol</h3>
+
+                <p>
+                  Exploring MCP-based architectures for connecting AI models
+                  with external tools, services, and structured context.
+                </p>
+
+                <div class="exploring-tags">
+                  <span>MCP</span>
+                  <span>AI Tools</span>
+                  <span>Integration</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="exploring-card">
+              <div class="exploring-icon" aria-hidden="true">
+                <i class="fa-solid fa-cloud"></i>
+              </div>
+
+              <div class="exploring-content">
+                <span class="exploring-number"> 04 </span>
+
+                <h3>AI Deployment & Cloud</h3>
+
+                <p>
+                  Exploring practical approaches for deploying AI-powered
+                  applications and integrating cloud infrastructure into
+                  intelligent systems.
+                </p>
+
+                <div class="exploring-tags">
+                  <span>Cloud</span>
+                  <span>Deployment</span>
+                  <span>AI Apps</span>
+                </div>
+              </div>
+            </article>
+          </div>
         </div>
+      </section>
 
+      <!-- =========================================================
+     PROJECTS SECTION
+========================================================= -->
 
-        <div class="exploring-grid">
+      <section
+        id="projects"
+        class="projects-section"
+        aria-labelledby="projects-title"
+      >
+        <div class="container">
+          <h2 id="projects-title" class="section-title">Projects</h2>
 
-
-            <!-- Generative AI -->
-
-            <div class="exploring-card">
-
-                <div class="exploring-icon">
-                    <i class="fa-solid fa-wand-magic-sparkles"></i>
-                </div>
-
-                <div class="exploring-content">
-
-                    <span class="exploring-number">
-                        01
-                    </span>
-
-                    <h3>
-                        Generative AI & LLMs
-                    </h3>
-
-                    <p>
-                        Exploring Large Language Models, prompt engineering,
-                        AI-powered applications, and practical techniques
-                        for building intelligent user experiences.
-                    </p>
-
-                    <div class="exploring-tags">
-
-                        <span>LLMs</span>
-                        <span>Prompting</span>
-                        <span>GenAI</span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- AI Agents -->
-
-            <div class="exploring-card">
-
-                <div class="exploring-icon">
-                    <i class="fa-solid fa-robot"></i>
-                </div>
-
-                <div class="exploring-content">
-
-                    <span class="exploring-number">
-                        02
-                    </span>
-
-                    <h3>
-                        AI Agents
-                    </h3>
-
-                    <p>
-                        Learning how autonomous AI systems can combine
-                        reasoning, tools, models, and workflows to perform
-                        multi-step tasks.
-                    </p>
-
-                    <div class="exploring-tags">
-
-                        <span>AI Agents</span>
-                        <span>Workflows</span>
-                        <span>Automation</span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- MCP -->
-
-            <div class="exploring-card">
-
-                <div class="exploring-icon">
-                    <i class="fa-solid fa-diagram-project"></i>
-                </div>
-
-                <div class="exploring-content">
-
-                    <span class="exploring-number">
-                        03
-                    </span>
-
-                    <h3>
-                        Model Context Protocol
-                    </h3>
-
-                    <p>
-                        Exploring MCP-based architectures for connecting
-                        AI models with external tools, services, and
-                        structured context.
-                    </p>
-
-                    <div class="exploring-tags">
-
-                        <span>MCP</span>
-                        <span>AI Tools</span>
-                        <span>Integration</span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- Cloud / Deployment -->
-
-            <div class="exploring-card">
-
-                <div class="exploring-icon">
-                    <i class="fa-solid fa-cloud"></i>
-                </div>
-
-                <div class="exploring-content">
-
-                    <span class="exploring-number">
-                        04
-                    </span>
-
-                    <h3>
-                        AI Deployment & Cloud
-                    </h3>
-
-                    <p>
-                        Exploring practical approaches for deploying
-                        AI-powered applications and integrating cloud
-                        infrastructure into intelligent systems.
-                    </p>
-
-                    <div class="exploring-tags">
-
-                        <span>Cloud</span>
-                        <span>Deployment</span>
-                        <span>AI Apps</span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ==================== PROJECTS SECTION ==================== -->
-
-<section id="projects" data-aos="fade-up">
-
-    <div class="container">
-
-        <h2 class="section-title">Projects</h2>
-
-        <p class="section-subtitle">
+          <p class="section-subtitle">
             AI-powered systems and software projects focused on solving
             real-world problems through intelligent technologies.
-        </p>
+          </p>
 
-
-        <div class="projects-grid">
-
-
+          <div class="projects-grid">
             <!-- ==================== INTELLIHIRE ==================== -->
 
-<div class="project-card featured-project">
+            <article class="project-card">
+              <div class="project-top">
+                <span class="project-category">
+                  AI • Generative AI • Voice
+                </span>
 
-    <div class="project-top">
+                <span class="project-number"> 01 </span>
+              </div>
 
-        <span class="project-category">
-            AI • Generative AI • Voice
-        </span>
+              <div class="project-icon" aria-hidden="true">
+                <i class="fa-solid fa-microphone-lines"></i>
+              </div>
 
-        <span class="project-number">
-            01
-        </span>
+              <div class="project-content">
+                <h3>IntelliHire</h3>
 
-    </div>
-
-
-    <div class="project-icon">
-        <i class="fa-solid fa-microphone-lines"></i>
-    </div>
-
-
-    <div class="project-content">
-
-        <h3>IntelliHire</h3>
-
-        <p class="project-tagline">
-            AI-Powered Voice Interview Platform
-        </p>
-
-        <p class="project-description">
-            An AI-powered interview platform that generates
-            intelligent interview questions, conducts voice
-            interviews, converts speech to text, evaluates
-            candidate responses using Generative AI, and
-            generates recruiter-ready performance reports.
-        </p>
-
-
-        <!-- Technical Highlights -->
-
-        <div class="project-highlights">
-
-            <div class="highlight-item">
-                <strong>05</strong>
-                <span>AI/Tech Components</span>
-            </div>
-
-            <div class="highlight-item">
-                <strong>02</strong>
-                <span>Voice AI Stages</span>
-            </div>
-
-            <div class="highlight-item">
-                <strong>01</strong>
-                <span>End-to-End Workflow</span>
-            </div>
-
-        </div>
-
-
-        <!-- Engineering Snapshot -->
-
-        <div class="engineering-snapshot">
-
-            <div class="snapshot-item">
-
-                <span class="snapshot-label">INPUT</span>
-
-                <strong>Candidate Voice</strong>
-
-                <p>
-                    Interview responses captured through voice interaction.
+                <p class="project-tagline">
+                  AI-Powered Voice Interview Platform
                 </p>
 
-            </div>
-
-
-            <div class="snapshot-arrow">
-                <i class="fa-solid fa-arrow-right"></i>
-            </div>
-
-
-            <div class="snapshot-item">
-
-                <span class="snapshot-label">CORE</span>
-
-                <strong>AI Processing</strong>
-
-                <p>
-                    Speech recognition and Generative AI evaluation.
+                <p class="project-description">
+                  An AI-powered interview platform that generates intelligent
+                  interview questions, conducts voice interviews, converts
+                  speech to text, evaluates candidate responses using Generative
+                  AI, and generates recruiter-ready performance reports.
                 </p>
 
-            </div>
+                <div class="project-highlights">
+                  <div class="highlight-item">
+                    <strong>05</strong>
+                    <span>AI/Tech Components</span>
+                  </div>
 
+                  <div class="highlight-item">
+                    <strong>02</strong>
+                    <span>Voice AI Stages</span>
+                  </div>
 
-            <div class="snapshot-arrow">
-                <i class="fa-solid fa-arrow-right"></i>
-            </div>
+                  <div class="highlight-item">
+                    <strong>01</strong>
+                    <span>End-to-End Workflow</span>
+                  </div>
+                </div>
 
+                <div class="engineering-snapshot">
+                  <div class="snapshot-item">
+                    <span class="snapshot-label"> INPUT </span>
 
-            <div class="snapshot-item">
+                    <strong> Candidate Voice </strong>
 
-                <span class="snapshot-label">OUTPUT</span>
+                    <p>
+                      Interview responses captured through voice interaction.
+                    </p>
+                  </div>
 
-                <strong>AI Report</strong>
+                  <div class="snapshot-arrow" aria-hidden="true">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
 
-                <p>
-                    Structured candidate evaluation and recruiter insights.
-                </p>
+                  <div class="snapshot-item">
+                    <span class="snapshot-label"> CORE </span>
 
-            </div>
+                    <strong> AI Processing </strong>
 
-        </div>
+                    <p>Speech recognition and Generative AI evaluation.</p>
+                  </div>
 
+                  <div class="snapshot-arrow" aria-hidden="true">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
 
-        <!-- Project Focus -->
+                  <div class="snapshot-item">
+                    <span class="snapshot-label"> OUTPUT </span>
 
-        <div class="project-focus">
+                    <strong> AI Report </strong>
 
-            <span>
-                <i class="fa-solid fa-brain"></i>
-                Generative AI
-            </span>
+                    <p>
+                      Structured candidate evaluation and recruiter insights.
+                    </p>
+                  </div>
+                </div>
 
-            <span>
-                <i class="fa-solid fa-microphone"></i>
-                Speech Recognition
-            </span>
+                <div class="project-focus">
+                  <span>
+                    <i class="fa-solid fa-brain" aria-hidden="true"></i>
+                    Generative AI
+                  </span>
 
-            <span>
+                  <span>
+                    <i class="fa-solid fa-microphone" aria-hidden="true"></i>
+                    Speech Recognition
+                  </span>
+
+                  <span>
+                    <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+                    Candidate Evaluation
+                  </span>
+                </div>
+
+                <div class="tech-stack">
+                  <span>Python</span>
+                  <span>Streamlit</span>
+                  <span>Gemini AI</span>
+                  <span>Deepgram</span>
+                  <span>ElevenLabs</span>
+                </div>
+
+                <div class="project-footer">
+                  <span class="status-badge featured">
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+
+                    Featured Project
+                  </span>
+                </div>
+              </div>
+            </article>
+
+            <!-- ==================== BULLAI ==================== -->
+
+            <article class="project-card">
+              <div class="project-top">
+                <span class="project-category">
+                  AI • Computer Vision • Finance
+                </span>
+
+                <span class="project-number"> 02 </span>
+              </div>
+
+              <div class="project-icon" aria-hidden="true">
                 <i class="fa-solid fa-chart-line"></i>
-                Candidate Evaluation
-            </span>
+              </div>
 
-        </div>
+              <div class="project-content">
+                <h3>BullAI</h3>
 
+                <p class="project-tagline">AI-Powered Trading Companion</p>
 
-        <!-- Technology Stack -->
-
-        <div class="tech-stack">
-
-            <span>Python</span>
-            <span>Streamlit</span>
-            <span>Gemini AI</span>
-            <span>Deepgram</span>
-            <span>ElevenLabs</span>
-
-        </div>
-
-
-        <div class="project-footer">
-
-            <span class="status-badge featured">
-                <i class="fa-solid fa-star"></i>
-                Featured Project
-            </span>
-
-        </div>
-
-    </div>
-
-</div>
-
-
-<!-- ==================== BULLAI ==================== -->
-
-<div class="project-card featured-project">
-
-    <div class="project-top">
-
-        <span class="project-category">
-            AI • Computer Vision • Finance
-        </span>
-
-        <span class="project-number">
-            02
-        </span>
-
-    </div>
-
-
-    <div class="project-icon">
-        <i class="fa-solid fa-chart-line"></i>
-    </div>
-
-
-    <div class="project-content">
-
-        <h3>BullAI</h3>
-
-        <p class="project-tagline">
-            AI-Powered Trading Companion
-        </p>
-
-        <p class="project-description">
-            An AI-powered trading companion that combines
-            Machine Learning, Computer Vision, NLP,
-            Explainable AI, and Model Context Protocol (MCP)
-            to analyze stock charts, recognize market
-            patterns, provide conversational trading
-            assistance, and generate transparent AI-driven
-            predictions.
-        </p>
-
-
-        <!-- Technical Highlights -->
-
-        <div class="project-highlights">
-
-            <div class="highlight-item">
-                <strong>05</strong>
-                <span>AI Techniques</span>
-            </div>
-
-            <div class="highlight-item">
-                <strong>01</strong>
-                <span>Trading Domain</span>
-            </div>
-
-            <div class="highlight-item">
-                <strong>01</strong>
-                <span>Explainability Layer</span>
-            </div>
-
-        </div>
-
-
-        <!-- Engineering Snapshot -->
-
-        <div class="engineering-snapshot">
-
-            <div class="snapshot-item">
-
-                <span class="snapshot-label">
-                    INPUT
-                </span>
-
-                <strong>
-                    Stock Charts
-                </strong>
-
-                <p>
-                    Market chart data supplied for AI-based analysis.
+                <p class="project-description">
+                  An AI-powered trading companion that combines Machine
+                  Learning, Computer Vision, NLP, Explainable AI, and Model
+                  Context Protocol (MCP) to analyze stock charts, recognize
+                  market patterns, provide conversational trading assistance,
+                  and generate transparent AI-driven predictions.
                 </p>
 
-            </div>
+                <div class="project-highlights">
+                  <div class="highlight-item">
+                    <strong>05</strong>
+                    <span>AI Techniques</span>
+                  </div>
 
+                  <div class="highlight-item">
+                    <strong>01</strong>
+                    <span>Trading Domain</span>
+                  </div>
 
-            <div class="snapshot-arrow">
-                <i class="fa-solid fa-arrow-right"></i>
-            </div>
+                  <div class="highlight-item">
+                    <strong>01</strong>
+                    <span>Explainability Layer</span>
+                  </div>
+                </div>
 
+                <div class="engineering-snapshot">
+                  <div class="snapshot-item">
+                    <span class="snapshot-label"> INPUT </span>
 
-            <div class="snapshot-item">
+                    <strong> Stock Charts </strong>
 
-                <span class="snapshot-label">
-                    CORE
+                    <p>Market chart data supplied for AI-based analysis.</p>
+                  </div>
+
+                  <div class="snapshot-arrow" aria-hidden="true">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
+
+                  <div class="snapshot-item">
+                    <span class="snapshot-label"> CORE </span>
+
+                    <strong> AI Analysis </strong>
+
+                    <p>Computer Vision, ML, NLP, MCP, and explainability.</p>
+                  </div>
+
+                  <div class="snapshot-arrow" aria-hidden="true">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
+
+                  <div class="snapshot-item">
+                    <span class="snapshot-label"> OUTPUT </span>
+
+                    <strong> AI Insights </strong>
+
+                    <p>
+                      Pattern analysis and transparent AI-assisted predictions.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="project-focus">
+                  <span>
+                    <i class="fa-solid fa-eye" aria-hidden="true"></i>
+                    Computer Vision
+                  </span>
+
+                  <span>
+                    <i class="fa-solid fa-robot" aria-hidden="true"></i>
+                    Machine Learning
+                  </span>
+
+                  <span>
+                    <i
+                      class="fa-solid fa-diagram-project"
+                      aria-hidden="true"
+                    ></i>
+                    MCP
+                  </span>
+                </div>
+
+                <div class="tech-stack">
+                  <span>Python</span>
+                  <span>FastAPI</span>
+                  <span>Next.js</span>
+                  <span>Computer Vision</span>
+                  <span>MCP</span>
+                  <span>SHAP</span>
+                </div>
+
+                <div class="project-footer">
+                  <span class="status-badge featured">
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+
+                    AI Innovation
+                  </span>
+                </div>
+              </div>
+            </article>
+
+            <!-- ==================== WEBGENIE ==================== -->
+
+            <article class="project-card">
+              <div class="project-top">
+                <span class="project-category">
+                  Generative AI • Web Development
                 </span>
 
-                <strong>
-                    AI Analysis
-                </strong>
+                <span class="project-number"> 03 </span>
+              </div>
 
-                <p>
-                    Computer Vision, ML, NLP, MCP, and explainability.
+              <div class="project-icon" aria-hidden="true">
+                <i class="fa-solid fa-globe"></i>
+              </div>
+
+              <div class="project-content">
+                <h3>WebGenie</h3>
+
+                <p class="project-tagline">AI Website Generator</p>
+
+                <p class="project-description">
+                  An AI-powered website generator that creates responsive
+                  websites from natural language prompts using a credit-based
+                  generation system and modern web technologies.
                 </p>
 
-            </div>
+                <div class="project-highlights">
+                  <div class="highlight-item">
+                    <strong>01</strong>
+                    <span>AI Generator</span>
+                  </div>
 
+                  <div class="highlight-item">
+                    <strong>NL</strong>
+                    <span>Prompt Input</span>
+                  </div>
 
-            <div class="snapshot-arrow">
-                <i class="fa-solid fa-arrow-right"></i>
-            </div>
+                  <div class="highlight-item">
+                    <strong>01</strong>
+                    <span>Generation System</span>
+                  </div>
+                </div>
 
+                <div class="engineering-snapshot">
+                  <div class="snapshot-item">
+                    <span class="snapshot-label"> INPUT </span>
 
-            <div class="snapshot-item">
+                    <strong> Natural Language </strong>
 
-                <span class="snapshot-label">
-                    OUTPUT
-                </span>
+                    <p>Website requirements provided through user prompts.</p>
+                  </div>
 
-                <strong>
-                    AI Insights
-                </strong>
+                  <div class="snapshot-arrow" aria-hidden="true">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
 
-                <p>
-                    Pattern analysis and transparent AI-assisted predictions.
+                  <div class="snapshot-item">
+                    <span class="snapshot-label"> CORE </span>
+
+                    <strong> AI Generation </strong>
+
+                    <p>AI interprets prompts and generates website content.</p>
+                  </div>
+
+                  <div class="snapshot-arrow" aria-hidden="true">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
+
+                  <div class="snapshot-item">
+                    <span class="snapshot-label"> OUTPUT </span>
+
+                    <strong> Responsive Website </strong>
+
+                    <p>
+                      Generated website output using modern web technologies.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="project-focus">
+                  <span>
+                    <i
+                      class="fa-solid fa-wand-magic-sparkles"
+                      aria-hidden="true"
+                    ></i>
+                    Generative AI
+                  </span>
+
+                  <span>
+                    <i class="fa-solid fa-code" aria-hidden="true"></i>
+                    Web Generation
+                  </span>
+                </div>
+
+                <div class="tech-stack">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                  <span>AI</span>
+                </div>
+
+                <div class="project-footer">
+                  <span class="status-badge">
+                    <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+
+                    AI Web Application
+                  </span>
+                </div>
+              </div>
+            </article>
+
+            <!-- ==================== SAFARSATHI ==================== -->
+
+            <article class="project-card">
+              <div class="project-top">
+                <span class="project-category"> Web Development • Travel </span>
+
+                <span class="project-number"> 04 </span>
+              </div>
+
+              <div class="project-icon" aria-hidden="true">
+                <i class="fa-solid fa-plane"></i>
+              </div>
+
+              <div class="project-content">
+                <h3>SafarSathi</h3>
+
+                <p class="project-tagline">Smart Travel Companion</p>
+
+                <p class="project-description">
+                  A smart travel companion platform that simplifies itinerary
+                  planning, travel management, and trip assistance through an
+                  intuitive and user-friendly interface.
                 </p>
 
-            </div>
+                <div class="project-highlights">
+                  <div class="highlight-item">
+                    <strong>04</strong>
+                    <span>Web Technologies</span>
+                  </div>
 
+                  <div class="highlight-item">
+                    <strong>01</strong>
+                    <span>Travel Platform</span>
+                  </div>
+
+                  <div class="highlight-item">
+                    <strong>01</strong>
+                    <span>Web Application</span>
+                  </div>
+                </div>
+
+                <div class="engineering-snapshot">
+                  <div class="snapshot-item">
+                    <span class="snapshot-label"> INPUT </span>
+
+                    <strong> Travel Requirements </strong>
+
+                    <p>User requirements for destinations and trip planning.</p>
+                  </div>
+
+                  <div class="snapshot-arrow" aria-hidden="true">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
+
+                  <div class="snapshot-item">
+                    <span class="snapshot-label"> CORE </span>
+
+                    <strong> Trip Management </strong>
+
+                    <p>Organizes itinerary planning and travel information.</p>
+                  </div>
+
+                  <div class="snapshot-arrow" aria-hidden="true">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
+
+                  <div class="snapshot-item">
+                    <span class="snapshot-label"> OUTPUT </span>
+
+                    <strong> Travel Assistance </strong>
+
+                    <p>
+                      Structured trip information through a user-friendly
+                      interface.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="project-focus">
+                  <span>
+                    <i class="fa-solid fa-route" aria-hidden="true"></i>
+                    Trip Planning
+                  </span>
+
+                  <span>
+                    <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+                    Web Application
+                  </span>
+                </div>
+
+                <div class="tech-stack">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                  <span>Bootstrap</span>
+                </div>
+
+                <div class="project-footer">
+                  <span class="status-badge">
+                    <i class="fa-solid fa-code" aria-hidden="true"></i>
+
+                    Web Project
+                  </span>
+                </div>
+              </div>
+            </article>
+          </div>
         </div>
+      </section>
 
+      <!-- ==================== HOW I BUILD AI SYSTEMS ==================== -->
 
-        <!-- Project Focus -->
-
-        <div class="project-focus">
-
-            <span>
-                <i class="fa-solid fa-eye"></i>
-                Computer Vision
-            </span>
-
-            <span>
-                <i class="fa-solid fa-robot"></i>
-                Machine Learning
-            </span>
-
-            <span>
-                <i class="fa-solid fa-diagram-project"></i>
-                MCP
-            </span>
-
-        </div>
-
-
-        <!-- Technology Stack -->
-
-        <div class="tech-stack">
-
-            <span>Python</span>
-            <span>FastAPI</span>
-            <span>Next.js</span>
-            <span>Computer Vision</span>
-            <span>MCP</span>
-            <span>SHAP</span>
-
-        </div>
-
-
-        <div class="project-footer">
-
-            <span class="status-badge featured">
-                <i class="fa-solid fa-star"></i>
-                AI Innovation
-            </span>
-
-        </div>
-
-    </div>
-
-</div>
-
-<!-- ==================== WEBGENIE ==================== -->
-
-<div class="project-card">
-
-    <div class="project-top">
-
-        <span class="project-category">
-            Generative AI • Web Development
-        </span>
-
-        <span class="project-number">
-            03
-        </span>
-
-    </div>
-
-
-    <div class="project-icon">
-        <i class="fa-solid fa-globe"></i>
-    </div>
-
-
-    <div class="project-content">
-
-        <h3>WebGenie</h3>
-
-        <p class="project-tagline">
-            AI Website Generator
-        </p>
-
-        <p class="project-description">
-            An AI-powered website generator that creates
-            responsive websites from natural language prompts
-            using a credit-based generation system and modern
-            web technologies.
-        </p>
-
-
-        <!-- Technical Highlights -->
-
-        <div class="project-highlights">
-
-            <div class="highlight-item">
-                <strong>01</strong>
-                <span>AI Generator</span>
-            </div>
-
-            <div class="highlight-item">
-                <strong>NL</strong>
-                <span>Prompt Input</span>
-            </div>
-
-            <div class="highlight-item">
-                <strong>01</strong>
-                <span>Generation System</span>
-            </div>
-
-        </div>
-
-
-        <!-- Engineering Snapshot -->
-
-        <div class="engineering-snapshot">
-
-            <div class="snapshot-item">
-
-                <span class="snapshot-label">
-                    INPUT
-                </span>
-
-                <strong>
-                    Natural Language
-                </strong>
-
-                <p>
-                    Website requirements provided through user prompts.
-                </p>
-
-            </div>
-
-
-            <div class="snapshot-arrow">
-                <i class="fa-solid fa-arrow-right"></i>
-            </div>
-
-
-            <div class="snapshot-item">
-
-                <span class="snapshot-label">
-                    CORE
-                </span>
-
-                <strong>
-                    AI Generation
-                </strong>
-
-                <p>
-                    AI interprets prompts and generates website content.
-                </p>
-
-            </div>
-
-
-            <div class="snapshot-arrow">
-                <i class="fa-solid fa-arrow-right"></i>
-            </div>
-
-
-            <div class="snapshot-item">
-
-                <span class="snapshot-label">
-                    OUTPUT
-                </span>
-
-                <strong>
-                    Responsive Website
-                </strong>
-
-                <p>
-                    Generated website output using modern web technologies.
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <!-- Project Focus -->
-
-        <div class="project-focus">
-
-            <span>
-                <i class="fa-solid fa-wand-magic-sparkles"></i>
-                Generative AI
-            </span>
-
-            <span>
-                <i class="fa-solid fa-code"></i>
-                Web Generation
-            </span>
-
-        </div>
-
-
-        <!-- Technology Stack -->
-
-        <div class="tech-stack">
-
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>AI</span>
-
-        </div>
-
-
-        <div class="project-footer">
-
-            <span class="status-badge">
-
-                <i class="fa-solid fa-layer-group"></i>
-
-                AI Web Application
-
-            </span>
-
-        </div>
-
-    </div>
-
-</div>
-
-<!-- ==================== SAFARSAATHI ==================== -->
-
-<div class="project-card">
-
-    <div class="project-top">
-
-        <span class="project-category">
-            Web Development • Travel
-        </span>
-
-        <span class="project-number">
-            04
-        </span>
-
-    </div>
-
-
-    <div class="project-icon">
-        <i class="fa-solid fa-plane"></i>
-    </div>
-
-
-    <div class="project-content">
-
-        <h3>SafarSathi</h3>
-
-        <p class="project-tagline">
-            Smart Travel Companion
-        </p>
-
-        <p class="project-description">
-            A smart travel companion platform that simplifies
-            itinerary planning, travel management, and trip
-            assistance through an intuitive and user-friendly
-            interface.
-        </p>
-
-
-        <!-- Technical Highlights -->
-
-        <div class="project-highlights">
-
-            <div class="highlight-item">
-                <strong>04</strong>
-                <span>Web Technologies</span>
-            </div>
-
-            <div class="highlight-item">
-                <strong>01</strong>
-                <span>Travel Platform</span>
-            </div>
-
-            <div class="highlight-item">
-                <strong>01</strong>
-                <span>Web Application</span>
-            </div>
-
-        </div>
-
-
-        <!-- Engineering Snapshot -->
-
-        <div class="engineering-snapshot">
-
-            <div class="snapshot-item">
-
-                <span class="snapshot-label">
-                    INPUT
-                </span>
-
-                <strong>
-                    Travel Requirements
-                </strong>
-
-                <p>
-                    User requirements for destinations and trip planning.
-                </p>
-
-            </div>
-
-
-            <div class="snapshot-arrow">
-                <i class="fa-solid fa-arrow-right"></i>
-            </div>
-
-
-            <div class="snapshot-item">
-
-                <span class="snapshot-label">
-                    CORE
-                </span>
-
-                <strong>
-                    Trip Management
-                </strong>
-
-                <p>
-                    Organizes itinerary planning and travel information.
-                </p>
-
-            </div>
-
-
-            <div class="snapshot-arrow">
-                <i class="fa-solid fa-arrow-right"></i>
-            </div>
-
-
-            <div class="snapshot-item">
-
-                <span class="snapshot-label">
-                    OUTPUT
-                </span>
-
-                <strong>
-                    Travel Assistance
-                </strong>
-
-                <p>
-                    Structured trip information through a user-friendly interface.
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <!-- Project Focus -->
-
-        <div class="project-focus">
-
-            <span>
-                <i class="fa-solid fa-route"></i>
-                Trip Planning
-            </span>
-
-            <span>
-                <i class="fa-solid fa-laptop-code"></i>
-                Web Application
-            </span>
-
-        </div>
-
-
-        <!-- Technology Stack -->
-
-        <div class="tech-stack">
-
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>Bootstrap</span>
-
-        </div>
-
-
-        <div class="project-footer">
-
-            <span class="status-badge">
-
-                <i class="fa-solid fa-code"></i>
-
-                Web Project
-
-            </span>
-
-        </div>
-
-    </div>
-
-</div>
-
-
-</div>
-
-</div>
-
-
-      <!-- ==================== EDUCATION SECTION ==================== -->
-
-      <section id="education" data-aos="fade-up">
+      <section id="ai-workflow" class="ai-workflow-section">
         <div class="container">
-          <h2 class="section-title">Education</h2>
+          <div class="workflow-header">
+            <span class="section-label"> ENGINEERING APPROACH </span>
 
-          <div class="education-card">
-            <div class="education-icon">
+            <h2 class="section-title">How I Build AI Systems</h2>
+
+            <p class="section-subtitle">
+              From understanding the problem to deploying an intelligent
+              solution, I follow a structured engineering workflow focused on
+              practical AI systems and real-world impact.
+            </p>
+          </div>
+
+          <div class="ai-workflow">
+            <!-- STEP 01 -->
+
+            <div class="workflow-step">
+              <div class="workflow-number">01</div>
+
+              <div class="workflow-icon">
+                <i class="fa-solid fa-bullseye"></i>
+              </div>
+
+              <div class="workflow-content">
+                <span class="workflow-label"> UNDERSTAND </span>
+
+                <h3>Define the Problem</h3>
+
+                <p>
+                  Understand the real-world problem, identify the target users,
+                  define the expected outcome, and determine what role AI should
+                  play in the solution.
+                </p>
+
+                <div class="workflow-tags">
+                  <span>Problem Definition</span>
+                  <span>User Needs</span>
+                  <span>Requirements</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- STEP 02 -->
+
+            <div class="workflow-step">
+              <div class="workflow-number">02</div>
+
+              <div class="workflow-icon">
+                <i class="fa-solid fa-diagram-project"></i>
+              </div>
+
+              <div class="workflow-content">
+                <span class="workflow-label"> DESIGN </span>
+
+                <h3>Design the AI Architecture</h3>
+
+                <p>
+                  Select suitable models, frameworks, data flows, APIs, tools,
+                  and system components to create a practical architecture for
+                  the application.
+                </p>
+
+                <div class="workflow-tags">
+                  <span>Architecture</span>
+                  <span>Models</span>
+                  <span>APIs</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- STEP 03 -->
+
+            <div class="workflow-step">
+              <div class="workflow-number">03</div>
+
+              <div class="workflow-icon">
+                <i class="fa-solid fa-code"></i>
+              </div>
+
+              <div class="workflow-content">
+                <span class="workflow-label"> BUILD </span>
+
+                <h3>Develop the System</h3>
+
+                <p>
+                  Integrate AI models with application logic, databases, APIs,
+                  interfaces, and supporting technologies to build an end-to-end
+                  system.
+                </p>
+
+                <div class="workflow-tags">
+                  <span>Python</span>
+                  <span>APIs</span>
+                  <span>Full Stack</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- STEP 04 -->
+
+            <div class="workflow-step">
+              <div class="workflow-number">04</div>
+
+              <div class="workflow-icon">
+                <i class="fa-solid fa-chart-line"></i>
+              </div>
+
+              <div class="workflow-content">
+                <span class="workflow-label"> EVALUATE </span>
+
+                <h3>Test & Improve</h3>
+
+                <p>
+                  Evaluate system performance, validate AI outputs, identify
+                  weaknesses, and iteratively improve the overall user
+                  experience and reliability.
+                </p>
+
+                <div class="workflow-tags">
+                  <span>Testing</span>
+                  <span>Evaluation</span>
+                  <span>Optimization</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- STEP 05 -->
+
+            <div class="workflow-step">
+              <div class="workflow-number">05</div>
+
+              <div class="workflow-icon">
+                <i class="fa-solid fa-rocket"></i>
+              </div>
+
+              <div class="workflow-content">
+                <span class="workflow-label"> DEPLOY </span>
+
+                <h3>Deliver & Iterate</h3>
+
+                <p>
+                  Deploy the application, monitor its behavior, gather feedback,
+                  and continuously improve the system as requirements and
+                  technologies evolve.
+                </p>
+
+                <div class="workflow-tags">
+                  <span>Deployment</span>
+                  <span>Monitoring</span>
+                  <span>Iteration</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SYSTEM PRINCIPLE -->
+
+          <div class="workflow-principle">
+            <div class="principle-icon">
+              <i class="fa-solid fa-brain"></i>
+            </div>
+
+            <div class="principle-content">
+              <span class="principle-label"> ENGINEERING PRINCIPLE </span>
+
+              <h3>AI is part of the system — not the entire system.</h3>
+
+              <p>
+                I focus on combining AI models with software engineering, data,
+                APIs, interfaces, and reliable system design to create useful
+                end-to-end applications.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+     EDUCATION SECTION
+========================================================= -->
+
+      <section
+        id="education"
+        class="education-section"
+        aria-labelledby="education-title"
+        data-aos="fade-up"
+      >
+        <div class="container">
+          <h2 id="education-title" class="section-title">Education</h2>
+
+          <article class="education-card">
+            <div class="education-icon" aria-hidden="true">
               <i class="fa-solid fa-graduation-cap"></i>
             </div>
 
@@ -1622,877 +1460,742 @@
               <h4>Artificial Intelligence & Data Science</h4>
 
               <p>
-                <strong>Rizvi College of Engineering</strong><br />
-                Affiliated to the <strong>University of Mumbai</strong>
+                <strong> Rizvi College of Engineering </strong>
+
+                <br />
+
+                Affiliated to the
+                <strong> University of Mumbai </strong>
               </p>
 
               <div class="education-details">
                 <div class="edu-item">
-                  <span class="edu-label">GPA</span>
+                  <span class="edu-label"> GPA </span>
 
-                  <span class="edu-value">9.74 (Semester VI)</span>
+                  <span class="edu-value"> 9.74 (Semester VI) </span>
                 </div>
 
                 <div class="edu-item">
-                  <span class="edu-label">Current Year</span>
+                  <span class="edu-label"> Current Year </span>
 
-                  <span class="edu-value">Final Year</span>
+                  <span class="edu-value"> Final Year </span>
                 </div>
 
                 <div class="edu-item">
-                  <span class="edu-label">Expected Graduation</span>
+                  <span class="edu-label"> Expected Graduation </span>
 
-                  <span class="edu-value">2027</span>
+                  <span class="edu-value"> 2027 </span>
                 </div>
 
                 <div class="edu-item">
-                  <span class="edu-label">Location</span>
+                  <span class="edu-label"> Location </span>
 
-                  <span class="edu-value">Mumbai, Maharashtra</span>
+                  <span class="edu-value"> Mumbai, Maharashtra </span>
                 </div>
               </div>
             </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- =========================================================
+     ACHIEVEMENTS SECTION
+========================================================= -->
+
+      <section
+        id="achievements"
+        class="achievements-section"
+        aria-labelledby="achievements-title"
+      >
+        <div class="container">
+          <h2 id="achievements-title" class="section-title">Achievements</h2>
+
+          <p class="section-subtitle">
+            Academic milestones, international experiences, and technical
+            achievements that shaped my journey.
+          </p>
+
+          <div class="achievement-grid">
+            <!-- ACHIEVEMENT 1 -->
+
+            <article class="achievement-card">
+              <div class="achievement-top">
+                <span class="achievement-category"> Academic </span>
+
+                <span class="achievement-number"> 01 </span>
+              </div>
+
+              <div class="achievement-icon" aria-hidden="true">
+                <i class="fa-solid fa-medal"></i>
+              </div>
+
+              <h3>Academic Excellence</h3>
+
+              <p>
+                Achieved an outstanding
+                <strong>9.74 GPA</strong>
+                in Semester VI of the
+                <strong> B.E. Artificial Intelligence & Data Science </strong>
+                program, reflecting consistent academic performance and
+                dedication.
+              </p>
+
+              <div class="achievement-highlight">
+                <strong> 9.74 </strong>
+
+                <span> Semester VI GPA </span>
+              </div>
+            </article>
+
+            <!-- ACHIEVEMENT 2 -->
+
+            <article class="achievement-card">
+              <div class="achievement-top">
+                <span class="achievement-category"> International </span>
+
+                <span class="achievement-number"> 02 </span>
+              </div>
+
+              <div class="achievement-icon" aria-hidden="true">
+                <i class="fa-solid fa-earth-europe"></i>
+              </div>
+
+              <h3>International Student Exchange Representative</h3>
+
+              <p>
+                Selected to represent
+                <strong>India</strong>
+                and my school at the
+
+                <a
+                  href="https://eumind.in/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-link"
+                  aria-label="Visit EUMIND website"
+                >
+                  <strong>
+                    EUMIND Cultural & Academic Student Exchange Program
+                  </strong>
+                </a>
+              </p>
+            </article>
+
+            <!-- ACHIEVEMENT 3 -->
+
+            <article class="achievement-card">
+              <div class="achievement-top">
+                <span class="achievement-category"> Award </span>
+
+                <span class="achievement-number"> 03 </span>
+              </div>
+
+              <div class="achievement-icon" aria-hidden="true">
+                <i class="fa-solid fa-award"></i>
+              </div>
+
+              <h3>Certificate of Excellence – Best Article Award</h3>
+
+              <p>
+                Awarded the
+                <strong>Certificate of Excellence</strong>
+                for authoring the
+                <strong>Best Article</strong>
+                in the
+                <strong>
+                  EUMIND eJournal Project – "Facilities for Youth"
+                </strong>
+                during the
+                <strong>2018–2019</strong>
+                academic year.
+              </p>
+            </article>
+
+            <!-- ACHIEVEMENT 4 -->
+
+            <article class="achievement-card">
+              <div class="achievement-top">
+                <span class="achievement-category"> Engineering </span>
+
+                <span class="achievement-number"> 04 </span>
+              </div>
+
+              <div class="achievement-icon" aria-hidden="true">
+                <i class="fa-solid fa-code"></i>
+              </div>
+
+              <h3>AI & Software Development</h3>
+
+              <p>
+                Designed and developed four major projects—
+                <strong>IntelliHire</strong>, <strong>BullAI</strong>,
+                <strong>WebGenie</strong>, and
+                <strong>SafarSathi</strong>—demonstrating expertise in
+                Artificial Intelligence, Full-Stack Development, and modern
+                software engineering.
+              </p>
+
+              <div class="achievement-projects">
+                <span>IntelliHire</span>
+                <span>BullAI</span>
+                <span>WebGenie</span>
+                <span>SafarSathi</span>
+              </div>
+            </article>
+
+            <!-- ACHIEVEMENT 5 -->
+
+            <article class="achievement-card">
+              <div class="achievement-top">
+                <span class="achievement-category"> AI Innovation </span>
+
+                <span class="achievement-number"> 05 </span>
+              </div>
+
+              <div class="achievement-icon" aria-hidden="true">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+
+              <h3>Artificial Intelligence Innovation</h3>
+
+              <p>
+                Built intelligent applications utilizing
+                <strong>
+                  Generative AI, Machine Learning, Computer Vision, Natural
+                  Language Processing (NLP), and Large Language Models (LLMs)
+                </strong>
+                to solve real-world problems.
+              </p>
+
+              <div class="achievement-tech">
+                <span>Generative AI</span>
+                <span>ML</span>
+                <span>Computer Vision</span>
+                <span>NLP</span>
+                <span>LLMs</span>
+              </div>
+            </article>
+
+            <!-- ACHIEVEMENT 6 -->
+
+            <article class="achievement-card">
+              <div class="achievement-top">
+                <span class="achievement-category"> Certifications </span>
+
+                <span class="achievement-number"> 06 </span>
+              </div>
+
+              <div class="achievement-icon" aria-hidden="true">
+                <i class="fa-solid fa-certificate"></i>
+              </div>
+
+              <h3>Professional Certifications</h3>
+
+              <p>
+                Earned certifications in
+                <strong>
+                  AWS Cloud Foundations, Generative AI, Artificial Intelligence,
+                  Cyber Security & Data Forensics, and AI Internship & Training
+                  Programs </strong
+                >, strengthening expertise across AI and cloud technologies.
+              </p>
+
+              <div class="achievement-tech">
+                <span>AWS</span>
+                <span>Generative AI</span>
+                <span>AI</span>
+                <span>Cyber Security</span>
+              </div>
+            </article>
           </div>
         </div>
       </section>
 
-<!-- ==================== ACHIEVEMENTS SECTION ==================== -->
+      <!-- =========================================================
+     INTERNSHIPS SECTION
+========================================================= -->
 
-<section id="achievements" data-aos="fade-up">
+      <section
+        id="internships"
+        class="internships-section"
+        aria-labelledby="internships-title"
+      >
+        <div class="container">
+          <h2 id="internships-title" class="section-title">Internships</h2>
 
-    <div class="container">
+          <p class="section-subtitle">
+            Practical experience gained through industry and AI-focused
+            internship programs.
+          </p>
 
-        <h2 class="section-title">
-            Achievements
-        </h2>
+          <div class="internships-grid">
+            <!-- INTERNZVALLEY -->
 
-        <p class="section-subtitle">
-            Academic milestones, international experiences, and
-            technical achievements that shaped my journey.
-        </p>
+            <article class="internship-card">
+              <div class="internship-top">
+                <span class="internship-category">
+                  Artificial Intelligence
+                </span>
 
+                <span class="internship-number"> 01 </span>
+              </div>
 
-        <div class="achievement-grid">
+              <div class="internship-icon" aria-hidden="true">
+                <i class="fa-solid fa-brain"></i>
+              </div>
 
+              <div class="internship-content">
+                <h3>Artificial Intelligence</h3>
 
-            <!-- ==================== ACHIEVEMENT 1 ==================== -->
+                <p class="internship-company">Internzvalley</p>
 
-            <div class="achievement-card">
+                <div class="internship-details">
+                  <span>
+                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
 
-                <div class="achievement-top">
+                    Bengaluru
+                  </span>
 
-                    <span class="achievement-category">
-                        Academic
-                    </span>
+                  <span>
+                    <i class="fa-regular fa-calendar" aria-hidden="true"></i>
 
-                    <span class="achievement-number">
-                        01
-                    </span>
-
+                    Jan – Mar 2024
+                  </span>
                 </div>
 
-
-                <div class="achievement-icon">
-                    <i class="fa-solid fa-medal"></i>
-                </div>
-
-
-                <h3>
-                    Academic Excellence
-                </h3>
-
-
-                <p>
-                    Achieved an outstanding
-                    <strong>9.74 GPA</strong>
-                    in Semester VI of the
-                    <strong>
-                        B.E. Artificial Intelligence & Data Science
-                    </strong>
-                    program, reflecting consistent academic
-                    performance and dedication.
+                <p class="internship-description">
+                  Completed an Artificial Intelligence internship focused on
+                  practical AI concepts, machine learning, and
+                  development-oriented problem solving.
                 </p>
 
+                <div class="internship-actions">
+                  <a
+                    href="https://internzvalley.in/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="internship-link"
+                    aria-label="Visit Internzvalley website"
+                  >
+                    <i
+                      class="fa-solid fa-arrow-up-right-from-square"
+                      aria-hidden="true"
+                    ></i>
 
-                <div class="achievement-highlight">
-                    <strong>9.74</strong>
-                    <span>Semester VI GPA</span>
+                    Organization
+                  </a>
+
+                  <a
+                    href="assets/internships/Internzvalley_Internship_Certificate.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="certificate-link"
+                    aria-label="View Internzvalley internship certificate"
+                  >
+                    <i class="fa-solid fa-eye" aria-hidden="true"></i>
+
+                    View Certificate
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- INAMIGOS -->
+
+            <article class="internship-card">
+              <div class="internship-top">
+                <span class="internship-category"> AI Web Development </span>
+
+                <span class="internship-number"> 02 </span>
+              </div>
+
+              <div class="internship-icon" aria-hidden="true">
+                <i class="fa-solid fa-code"></i>
+              </div>
+
+              <div class="internship-content">
+                <h3>AI Web Development</h3>
+
+                <p class="internship-company">InAmigos Foundation</p>
+
+                <div class="internship-details">
+                  <span>
+                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+
+                    Bilaspur
+                  </span>
+
+                  <span>
+                    <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+
+                    July 2026
+                  </span>
                 </div>
 
-            </div>
-
-
-            <!-- ==================== ACHIEVEMENT 2 ==================== -->
-
-            <div class="achievement-card">
-
-                <div class="achievement-top">
-
-                    <span class="achievement-category">
-                        International
-                    </span>
-
-                    <span class="achievement-number">
-                        02
-                    </span>
-
-                </div>
-
-
-                <div class="achievement-icon">
-                    <i class="fa-solid fa-earth-europe"></i>
-                </div>
-
-
-                <h3>
-                    International Student Exchange Representative
-                </h3>
-
-
-                <p>
-                    Selected to represent
-                    <strong>India</strong>
-                    and my school at the
-                    <a
-    href="https://eumind.in/"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="inline-link"
->
-    <strong>EUMIND Cultural & Academic Student Exchange Program</strong>
-</a>
-                    in the
-                    <strong>Netherlands (2019)</strong>,
-                    participating in international collaboration,
-                    cultural exchange, and academic engagement.
-                </p>
-            </div>
-
-
-            <!-- ==================== ACHIEVEMENT 3 ==================== -->
-
-            <div class="achievement-card">
-
-                <div class="achievement-top">
-
-                    <span class="achievement-category">
-                        Award
-                    </span>
-
-                    <span class="achievement-number">
-                        03
-                    </span>
-
-                </div>
-
-
-                <div class="achievement-icon">
-                    <i class="fa-solid fa-award"></i>
-                </div>
-
-
-                <h3>
-                    Certificate of Excellence – Best Article Award
-                </h3>
-
-
-                <p>
-                    Awarded the
-                    <strong>Certificate of Excellence</strong>
-                    for authoring the
-                    <strong>Best Article</strong>
-                    in the
-                    <strong>
-                        EUMIND eJournal Project –
-                        "Facilities for Youth"
-                    </strong>
-                    during the
-                    <strong>2018–2019</strong>
-                    academic year.
+                <p class="internship-description">
+                  Worked on AI and web development tasks involving data
+                  collection, analysis, AI-powered web solutions, and practical
+                  project implementation.
                 </p>
 
-            </div>
+                <div class="internship-actions">
+                  <a
+                    href="https://inamigosfoundation.org.in/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="internship-link"
+                    aria-label="Visit InAmigos Foundation website"
+                  >
+                    <i
+                      class="fa-solid fa-arrow-up-right-from-square"
+                      aria-hidden="true"
+                    ></i>
 
+                    Organization
+                  </a>
 
-            <!-- ==================== ACHIEVEMENT 4 ==================== -->
+                  <a
+                    href="assets/internships/InAmigos_Internship_Certificate.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="certificate-link"
+                    aria-label="View InAmigos internship certificate"
+                  >
+                    <i class="fa-solid fa-eye" aria-hidden="true"></i>
 
-            <div class="achievement-card">
-
-                <div class="achievement-top">
-
-                    <span class="achievement-category">
-                        Engineering
-                    </span>
-
-                    <span class="achievement-number">
-                        04
-                    </span>
-
+                    View Certificate
+                  </a>
                 </div>
-
-
-                <div class="achievement-icon">
-                    <i class="fa-solid fa-code"></i>
-                </div>
-
-
-                <h3>
-                    AI & Software Development
-                </h3>
-
-
-                <p>
-                    Designed and developed four major projects—
-                    <strong>IntelliHire</strong>,
-                    <strong>BullAI</strong>,
-                    <strong>WebGenie</strong>, and
-                    <strong>SafarSathi</strong>—demonstrating
-                    expertise in Artificial Intelligence,
-                    Full-Stack Development, and modern software
-                    engineering.
-                </p>
-
-
-                <div class="achievement-projects">
-
-                    <span>IntelliHire</span>
-                    <span>BullAI</span>
-                    <span>WebGenie</span>
-                    <span>SafarSathi</span>
-
-                </div>
-
-            </div>
-
-
-            <!-- ==================== ACHIEVEMENT 5 ==================== -->
-
-            <div class="achievement-card">
-
-                <div class="achievement-top">
-
-                    <span class="achievement-category">
-                        AI Innovation
-                    </span>
-
-                    <span class="achievement-number">
-                        05
-                    </span>
-
-                </div>
-
-
-                <div class="achievement-icon">
-                    <i class="fa-solid fa-brain"></i>
-                </div>
-
-
-                <h3>
-                    Artificial Intelligence Innovation
-                </h3>
-
-
-                <p>
-                    Built intelligent applications utilizing
-                    <strong>
-                        Generative AI, Machine Learning,
-                        Computer Vision, Natural Language
-                        Processing (NLP), and Large Language
-                        Models (LLMs)
-                    </strong>
-                    to solve real-world problems.
-                </p>
-
-
-                <div class="achievement-tech">
-
-                    <span>Generative AI</span>
-                    <span>ML</span>
-                    <span>Computer Vision</span>
-                    <span>NLP</span>
-                    <span>LLMs</span>
-
-                </div>
-
-            </div>
-
-
-            <!-- ==================== ACHIEVEMENT 6 ==================== -->
-
-            <div class="achievement-card">
-
-                <div class="achievement-top">
-
-                    <span class="achievement-category">
-                        Certifications
-                    </span>
-
-                    <span class="achievement-number">
-                        06
-                    </span>
-
-                </div>
-
-
-                <div class="achievement-icon">
-                    <i class="fa-solid fa-certificate"></i>
-                </div>
-
-
-                <h3>
-                    Professional Certifications
-                </h3>
-
-
-                <p>
-                    Earned certifications in
-                    <strong>
-                        AWS Cloud Foundations, Generative AI,
-                        Artificial Intelligence, Cyber Security
-                        & Data Forensics, and AI Internship &
-                        Training Programs
-                    </strong>,
-                    strengthening expertise across AI and cloud
-                    technologies.
-                </p>
-
-
-                <div class="achievement-tech">
-
-                    <span>AWS</span>
-                    <span>Generative AI</span>
-                    <span>AI</span>
-                    <span>Cyber Security</span>
-
-                </div>
-
-            </div>
-
-
+              </div>
+            </article>
+          </div>
         </div>
-
-    </div>
-
-</section>
-
- <!-- ==================== INTERNSHIPS SECTION ==================== -->
-
-<section id="internships" data-aos="fade-up">
-
-    <div class="container">
-
-        <h2 class="section-title">
-            Internships
-        </h2>
-
-        <p class="section-subtitle">
-            Practical experience gained through industry and
-            AI-focused internship programs.
-        </p>
-
-
-        <div class="internships-grid">
-
-
-            <!-- ==================== INTERNZVALLEY ==================== -->
-
-            <div class="internship-card">
-
-                <div class="internship-top">
-
-                    <span class="internship-category">
-                        Artificial Intelligence
-                    </span>
-
-                    <span class="internship-number">
-                        01
-                    </span>
-
-                </div>
-
-
-                <div class="internship-icon">
-
-                    <i class="fa-solid fa-brain"></i>
-
-                </div>
-
-
-                <div class="internship-content">
-
-                    <h3>
-                        Artificial Intelligence
-                    </h3>
-
-                    <p class="internship-company">
-                        Internzvalley
-                    </p>
-
-                    <div class="internship-details">
-
-                        <span>
-                            <i class="fa-solid fa-location-dot"></i>
-                            Bengaluru
-                        </span>
-
-                        <span>
-                            <i class="fa-regular fa-calendar"></i>
-                            Jan – Mar 2024
-                        </span>
-
-                    </div>
-
-
-                    <p class="internship-description">
-                        Completed an Artificial Intelligence internship
-                        focused on practical AI concepts, machine learning,
-                        and development-oriented problem solving.
-                    </p>
-
-
-                    <div class="internship-actions">
-
-                        <a
-                            href="https://internzvalley.in/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="internship-link"
-                        >
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            Organization
-                        </a>
-
-
-                        <a
-                            href="assets/internships/Internzvalley_Internship_Certificate.pdf"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="certificate-link"
-                        >
-                            <i class="fa-solid fa-eye"></i>
-                            View Certificate
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- ==================== INAMIGOS FOUNDATION ==================== -->
-
-            <div class="internship-card">
-
-                <div class="internship-top">
-
-                    <span class="internship-category">
-                        AI Web Development
-                    </span>
-
-                    <span class="internship-number">
-                        02
-                    </span>
-
-                </div>
-
-
-                <div class="internship-icon">
-
-                    <i class="fa-solid fa-code"></i>
-
-                </div>
-
-
-                <div class="internship-content">
-
-                    <h3>
-                        AI Web Development
-                    </h3>
-
-                    <p class="internship-company">
-                        InAmigos Foundation
-                    </p>
-
-                    <div class="internship-details">
-
-                        <span>
-                            <i class="fa-solid fa-location-dot"></i>
-                            Bilaspur
-                        </span>
-
-                        <span>
-                            <i class="fa-regular fa-calendar"></i>
-                            July 2026
-                        </span>
-
-                    </div>
-
-
-                    <p class="internship-description">
-                        Worked on AI and web development tasks involving
-                        data collection, analysis, AI-powered web solutions,
-                        and practical project implementation.
-                    </p>
-
-
-                    <div class="internship-actions">
-
-                        <a
-                            href="https://inamigosfoundation.org.in/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="internship-link"
-                        >
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            Organization
-                        </a>
-
-
-                        <a
-                            href="assets/internships/InAmigos_Internship_Certificate.pdf"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="certificate-link"
-                        >
-                            <i class="fa-solid fa-eye"></i>
-                            View Certificate
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ==================== CERTIFICATIONS SECTION ==================== -->
-
-<section id="certifications" data-aos="fade-up">
-
-    <div class="container">
-
-        <h2 class="section-title">Certifications</h2>
-
-        <div class="certificate-grid">
-
-
+      </section>
+
+      <!-- =========================================================
+     CERTIFICATIONS SECTION
+========================================================= -->
+
+      <section
+        id="certifications"
+        class="certifications-section"
+        aria-labelledby="certifications-title"
+      >
+        <div class="container">
+          <h2 id="certifications-title" class="section-title">
+            Certifications
+          </h2>
+
+          <div class="certificate-grid">
             <!-- AWS -->
 
-            <div class="certificate-card">
+            <article class="certificate-card">
+              <i class="fa-solid fa-cloud" aria-hidden="true"></i>
 
-                <i class="fa-solid fa-cloud"></i>
+              <h3>AWS Academy Graduate</h3>
 
-                <h3>AWS Academy Graduate</h3>
+              <p>Cloud Foundations</p>
 
-                <p>Cloud Foundations</p>
+              <a
+                href="assets/certificates/AWS_Cloud_Foundations.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="certificate-link"
+                aria-label="View AWS Cloud Foundations certificate"
+              >
+                <i class="fa-solid fa-eye" aria-hidden="true"></i>
 
-                <a
-                    href="assets/certificates/AWS_Cloud_Foundations.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="certificate-link"
-                >
-                    <i class="fa-solid fa-eye"></i>
-                    View Certificate
-                </a>
+                View Certificate
+              </a>
+            </article>
 
-            </div>
+            <!-- GENERATIVE AI -->
 
+            <article class="certificate-card">
+              <i class="fa-solid fa-robot" aria-hidden="true"></i>
 
-            <!-- Generative AI -->
+              <h3>Generative AI Mastermind</h3>
 
-            <div class="certificate-card">
+              <p>Certificate of Completion • Outskill</p>
 
-                <i class="fa-solid fa-robot"></i>
+              <a
+                href="assets/certificates/Generative_AI_Mastermind.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="certificate-link"
+                aria-label="View Generative AI Mastermind certificate"
+              >
+                <i class="fa-solid fa-eye" aria-hidden="true"></i>
 
-                <h3>Generative AI Mastermind</h3>
+                View Certificate
+              </a>
+            </article>
 
-                <p>Certificate of Completion • Outskill</p>
+            <!-- AI TRAINING -->
 
-                <a
-                    href="assets/certificates/Generative_AI_Mastermind.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="certificate-link"
-                >
-                    <i class="fa-solid fa-eye"></i>
-                    View Certificate
-                </a>
+            <article class="certificate-card">
+              <i class="fa-solid fa-brain" aria-hidden="true"></i>
 
-            </div>
+              <h3>Artificial Intelligence Training</h3>
 
+              <p>Internzvalley</p>
 
-            <!-- Artificial Intelligence Training -->
+              <a
+                href="assets/certificates/AI_Training_Internzvalley.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="certificate-link"
+                aria-label="View Artificial Intelligence Training certificate"
+              >
+                <i class="fa-solid fa-eye" aria-hidden="true"></i>
 
-            <div class="certificate-card">
+                View Certificate
+              </a>
+            </article>
 
-                <i class="fa-solid fa-brain"></i>
+            <!-- CYBER SECURITY -->
 
-                <h3>Artificial Intelligence Training</h3>
+            <article class="certificate-card">
+              <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
 
-                <p>Internzvalley</p>
+              <h3>Cyber Security & Data Forensics</h3>
 
-                <a
-                    href="assets/certificates/AI_Training_Internzvalley.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="certificate-link"
-                >
-                    <i class="fa-solid fa-eye"></i>
-                    View Certificate
-                </a>
+              <p>Value Added Course</p>
 
-            </div>
+              <a
+                href="assets/certificates/Cyber_Security_Data_Forensics.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="certificate-link"
+                aria-label="View Cyber Security and Data Forensics certificate"
+              >
+                <i class="fa-solid fa-eye" aria-hidden="true"></i>
 
-
-            <!-- Cyber Security -->
-
-            <div class="certificate-card">
-
-                <i class="fa-solid fa-shield-halved"></i>
-
-                <h3>Cyber Security & Data Forensics</h3>
-
-                <p>Value Added Course</p>
-
-                <a
-                    href="assets/certificates/Cyber_Security_Data_Forensics.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="certificate-link"
-                >
-                    <i class="fa-solid fa-eye"></i>
-                    View Certificate
-                </a>
-
-            </div>
-
-
+                View Certificate
+              </a>
+            </article>
+          </div>
         </div>
+      </section>
 
-    </div>
+      <!-- =========================================================
+     CONTACT SECTION
+========================================================= -->
 
-</section>
+      <section
+        id="contact"
+        class="contact-section"
+        aria-labelledby="contact-title"
+      >
+        <div class="container">
+          <h2 id="contact-title" class="section-title">Get In Touch</h2>
 
-      <!-- ==================== CONTACT SECTION ==================== -->
-
-<section id="contact" data-aos="fade-up">
-
-    <div class="container">
-
-        <h2 class="section-title">Get In Touch</h2>
-
-        <div class="contact-container">
-
-            <!-- Contact Information -->
+          <div class="contact-container">
+            <!-- CONTACT INFORMATION -->
 
             <div class="contact-info">
+              <h3>Let's Connect</h3>
 
-                <h3>Let's Connect</h3>
+              <p>
+                I'm always open to discussing AI, software development,
+                internships, collaborations, or exciting project opportunities.
+              </p>
 
-                <p>
-                    I'm always open to discussing AI, software development,
-                    internships, collaborations, or exciting project opportunities.
-                </p>
+              <div class="contact-item">
+                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
 
-                <div class="contact-item">
+                <div>
+                  <h4>Email</h4>
 
-                    <i class="fa-solid fa-envelope"></i>
-
-                    <div>
-
-                        <h4>Email</h4>
-
-                        <p>daniyalghori96@gmail.com</p>
-
-                    </div>
-
+                  <a
+                    href="mailto:daniyalghori96@gmail.com"
+                    aria-label="Email Daniyal"
+                  >
+                    daniyalghori96@gmail.com
+                  </a>
                 </div>
+              </div>
 
-                <div class="contact-item">
+              <div class="contact-item">
+                <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
 
-                    <i class="fa-solid fa-location-dot"></i>
+                <div>
+                  <h4>Location</h4>
 
-                    <div>
-
-                        <h4>Location</h4>
-
-                        <p>Mumbai, Maharashtra, India</p>
-
-                    </div>
-
+                  <p>Mumbai, Maharashtra, India</p>
                 </div>
+              </div>
 
-                <div class="contact-item">
+              <div class="contact-item">
+                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
 
-                    <i class="fa-brands fa-linkedin"></i>
+                <div>
+                  <h4>LinkedIn</h4>
 
-                    <div>
-
-                        <h4>LinkedIn</h4>
-
-                        <a href="https://www.linkedin.com/in/daniyal-ghori-335b0337a/" target="_blank">
-                            View Profile
-                        </a>
-
-                    </div>
-
+                  <a
+                    href="https://www.linkedin.com/in/daniyal-ghori-335b0337a/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="View Daniyal's LinkedIn profile"
+                  >
+                    View Profile
+                  </a>
                 </div>
+              </div>
 
-                <div class="contact-item">
+              <div class="contact-item">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
 
-                    <i class="fa-brands fa-github"></i>
+                <div>
+                  <h4>GitHub</h4>
 
-                    <div>
-
-                        <h4>GitHub</h4>
-
-                        <a href="https://github.com/Daniyalghori" target="_blank">
-                            github.com/Daniyalghori
-                        </a>
-
-                    </div>
-
+                  <a
+                    href="https://github.com/Daniyalghori"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="View Daniyal's GitHub profile"
+                  >
+                    github.com/Daniyalghori
+                  </a>
                 </div>
-
+              </div>
             </div>
 
-            <!-- Contact Form -->
+            <!-- CONTACT FORM -->
 
             <div class="contact-form">
+              <form id="contact-form" aria-label="Contact form">
+                <div class="form-group">
+                  <label for="user-name"> Your Name </label>
 
-                <form id="contact-form">
+                  <input
+                    type="text"
+                    id="user-name"
+                    name="user_name"
+                    placeholder="Your Name"
+                    autocomplete="name"
+                    required
+                  />
+                </div>
 
-                    <input
-                        type="text"
-                        name="user_name"
-                        placeholder="Your Name"
-                        required
-                    >
+                <div class="form-group">
+                  <label for="user-email"> Your Email </label>
 
-                    <input
-                        type="email"
-                        name="user_email"
-                        placeholder="Your Email"
-                        required
-                    >
+                  <input
+                    type="email"
+                    id="user-email"
+                    name="user_email"
+                    placeholder="Your Email"
+                    autocomplete="email"
+                    required
+                  />
+                </div>
 
-                    <input
-                        type="text"
-                        name="subject"
-                        placeholder="Subject"
-                        required
-                    >
+                <div class="form-group">
+                  <label for="user-subject"> Subject </label>
 
-                    <textarea
-                        name="message"
-                        rows="6"
-                        placeholder="Your Message"
-                        required
-                    ></textarea>
+                  <input
+                    type="text"
+                    id="user-subject"
+                    name="subject"
+                    placeholder="Subject"
+                    required
+                  />
+                </div>
 
-                    <button type="submit" class="btn btn-primary">
+                <div class="form-group">
+                  <label for="user-message"> Your Message </label>
 
-                        <i class="fa-solid fa-paper-plane"></i>
+                  <textarea
+                    id="user-message"
+                    name="message"
+                    rows="6"
+                    placeholder="Your Message"
+                    required
+                  ></textarea>
+                </div>
 
-                        Send Message
+                <button type="submit" class="btn btn-primary">
+                  <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
 
-                    </button>
-
-                </form>
-
+                  <span> Send Message </span>
+                </button>
+              </form>
             </div>
-
+          </div>
         </div>
+      </section>
+    </main>
 
-    </div>
+    <!-- =========================================================
+     FOOTER
+========================================================= -->
 
-</section>
-
-   <!-- ==================== FOOTER ==================== -->
-
-<footer>
-
-    <div class="container">
-
+    <footer class="site-footer">
+      <div class="container">
         <div class="footer-content">
+          <h3>Daniyal Mohammed Nadeem Ghori</h3>
 
-            <h3>Daniyal Mohammed Nadeem Ghori</h3>
+          <p>
+            AI & Data Science Engineering Student passionate about Artificial
+            Intelligence, Full Stack Development, and building innovative
+            software solutions.
+          </p>
 
-            <p>
-                AI & Data Science Engineering Student passionate about
-                Artificial Intelligence, Full Stack Development, and
-                building innovative software solutions.
-            </p>
+          <div class="footer-social" aria-label="Footer social links">
+            <a
+              href="https://github.com/Daniyalghori"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Visit Daniyal's GitHub profile"
+            >
+              <i class="fab fa-github" aria-hidden="true"></i>
+            </a>
 
-            <div class="footer-social">
+            <a
+              href="https://www.linkedin.com/in/daniyal-ghori-335b0337a/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Visit Daniyal's LinkedIn profile"
+            >
+              <i class="fab fa-linkedin" aria-hidden="true"></i>
+            </a>
 
-                <a href="https://github.com/Daniyalghori" target="_blank">
+            <a
+              href="mailto:daniyalghori96@gmail.com"
+              aria-label="Send an email to Daniyal"
+            >
+              <i class="fas fa-envelope" aria-hidden="true"></i>
+            </a>
+          </div>
 
-                    <i class="fab fa-github"></i>
+          <hr />
 
-                </a>
-
-                <a href="https://www.linkedin.com/in/daniyal-ghori-335b0337a/" target="_blank">
-
-                    <i class="fab fa-linkedin"></i>
-
-                </a>
-
-                <a href="mailto:daniyalghori96@gmail.com">
-
-                    <i class="fas fa-envelope"></i>
-
-                </a>
-
-            </div>
-
-            <hr>
-
-            <p class="copyright">
-
-                © 2026 Daniyal Mohammed Nadeem Ghori.
-                All Rights Reserved.
-
-            </p>
-
+          <p class="copyright">
+            © 2026 Daniyal Mohammed Nadeem Ghori. All Rights Reserved.
+          </p>
         </div>
+      </div>
+    </footer>
 
-    </div>
+    <!-- =========================================================
+     SCROLL TO TOP
+========================================================= -->
+    <button
+      id="scrollTopBtn"
+      class="scroll-top-btn"
+      aria-label="Scroll to top"
+      type="button"
+    >
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
 
-</footer>
+    <!-- =========================================================
+     AOS JS
+========================================================= -->
 
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
-    <!-- Scroll To Top Button -->
-
-<button id="scrollTopBtn">
-
-    <i class="fa-solid fa-arrow-up"></i>
-
-</button>
-
-<!-- EmailJS SDK -->
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
-<!-- AOS Animation Library -->
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-
-<!-- Your JavaScript -->
-<script src="script.js"></script>
-
-<script>
-    AOS.init({
-        duration: 1000,
-        once: true
-    });
-</script>
-
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

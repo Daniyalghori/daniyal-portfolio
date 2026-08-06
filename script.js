@@ -7,163 +7,267 @@ document.addEventListener("DOMContentLoaded", () => {
   console.log("Portfolio Loaded Successfully");
 
   /* =====================================================
-   EMAILJS INITIALIZATION
-===================================================== */
+       EMAILJS INITIALIZATION
+    ===================================================== */
 
-  emailjs.init("d-cgjBKMLz5BhQpVJ");
+  if (typeof emailjs !== "undefined") {
+    emailjs.init("d-cgjBKMLz5BhQpVJ");
+  } else {
+    console.warn("EmailJS library not loaded.");
+  }
+
   /* =====================================================
- /* =====================================================
-   CONTACT FORM (EMAILJS)
-===================================================== */
+       CONTACT FORM - EMAILJS
+    ===================================================== */
 
   const contactForm = document.getElementById("contact-form");
 
-  if (contactForm) {
+  if (contactForm && typeof emailjs !== "undefined") {
     contactForm.addEventListener("submit", function (e) {
       e.preventDefault();
 
       const submitButton = contactForm.querySelector("button");
 
-      submitButton.disabled = true;
+      if (submitButton) {
+        submitButton.disabled = true;
 
-      submitButton.innerHTML =
-        '<i class="fa-solid fa-spinner fa-spin"></i> Sending...';
-
-      emailjs.init("d-cgjBKMLz5BhQpVJ");
+        submitButton.innerHTML =
+          '<i class="fa-solid fa-spinner fa-spin"></i> Sending...';
+      }
 
       emailjs
-        .sendForm(
-          "service_lad9rii",
-          "template_bszgbn4",
-          this,
-          "d-cgjBKMLz5BhQpVJ",
-        )
+        .sendForm("service_lad9rii", "template_bszgbn4", this)
 
         .then(function () {
-          alert("✅ Message sent successfully!");
+          alert("Message sent successfully!");
 
           contactForm.reset();
 
-          submitButton.disabled = false;
+          if (submitButton) {
+            submitButton.disabled = false;
 
-          submitButton.innerHTML =
-            '<i class="fa-solid fa-paper-plane"></i> Send Message';
+            submitButton.innerHTML =
+              '<i class="fa-solid fa-paper-plane"></i> Send Message';
+          }
         })
 
         .catch(function (error) {
           console.error("EmailJS Error:", error);
 
           alert(
-            "❌ Failed to send message.\n\n" +
+            "Failed to send message.\n\n" +
               "Status: " +
-              error.status +
+              (error.status || "Unknown") +
               "\n" +
               "Message: " +
-              error.text,
+              (error.text || "Unknown error"),
           );
 
-          submitButton.disabled = false;
+          if (submitButton) {
+            submitButton.disabled = false;
 
-          submitButton.innerHTML =
-            '<i class="fa-solid fa-paper-plane"></i> Send Message';
+            submitButton.innerHTML =
+              '<i class="fa-solid fa-paper-plane"></i> Send Message';
+          }
         });
     });
   }
+
   /* =====================================================
-       TYPING ANIMATION
+       HERO TYPING EFFECT
     ===================================================== */
 
   const typingElement = document.getElementById("typing-text");
 
-  if (!typingElement) return;
+  if (typingElement) {
+    const roles = [
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Generative AI",
+      "Full Stack Development",
+      "AI Engineering",
+    ];
 
-  const professions = [
-    "AI & Data Science Engineer",
-    "Full Stack Developer",
-    "Generative AI Enthusiast",
-    "Machine Learning Developer",
-  ];
+    let roleIndex = 0;
+    let characterIndex = 0;
+    let deleting = false;
 
-  let professionIndex = 0;
-  let characterIndex = 0;
-  let deleting = false;
+    const typingSpeed = 90;
+    const deletingSpeed = 50;
+    const typingPause = 1800;
+    const deletingPause = 500;
 
-  function typeEffect() {
-    const current = professions[professionIndex];
+    function typeEffect() {
+      const currentRole = roles[roleIndex];
 
-    if (!deleting) {
-      typingElement.textContent = current.substring(0, characterIndex);
-      characterIndex++;
+      /* =========================
+               TYPING
+            ========================= */
 
-      if (characterIndex > current.length) {
-        deleting = true;
-        setTimeout(typeEffect, 1500);
-        return;
-      }
-    } else {
-      typingElement.textContent = current.substring(0, characterIndex);
-      characterIndex--;
+      if (!deleting) {
+        typingElement.textContent = currentRole.substring(
+          0,
+          characterIndex + 1,
+        );
 
-      if (characterIndex < 0) {
-        deleting = false;
-        professionIndex = (professionIndex + 1) % professions.length;
-        characterIndex = 0;
+        characterIndex++;
+
+        if (characterIndex >= currentRole.length) {
+          deleting = true;
+
+          setTimeout(typeEffect, typingPause);
+        } else {
+          setTimeout(typeEffect, typingSpeed);
+        }
+      } else {
+        /* =========================
+               DELETING
+            ========================= */
+        typingElement.textContent = currentRole.substring(
+          0,
+          characterIndex - 1,
+        );
+
+        characterIndex--;
+
+        if (characterIndex <= 0) {
+          deleting = false;
+
+          roleIndex = (roleIndex + 1) % roles.length;
+
+          setTimeout(typeEffect, deletingPause);
+        } else {
+          setTimeout(typeEffect, deletingSpeed);
+        }
       }
     }
 
-    setTimeout(typeEffect, deleting ? 50 : 100);
-  }
+    /* Start typing */
 
-  typeEffect();
-});
-
-/* =====================================================
-   SCROLL TO TOP BUTTON
-===================================================== */
-
-const scrollBtn = document.getElementById("scrollTopBtn");
-
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 300) {
-    scrollBtn.style.display = "block";
+    typeEffect();
   } else {
-    scrollBtn.style.display = "none";
+    console.error("Typing element #typing-text was not found.");
   }
-});
 
-scrollBtn.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
+  /* =====================================================
+       MOBILE NAVIGATION
+    ===================================================== */
 
-    behavior: "smooth",
-  });
-});
+  const menuToggle = document.getElementById("menu-toggle");
+  const navLinks = document.querySelector(".nav-links");
 
-AOS.init({
-  duration: 1000,
-  once: true,
-});
-/* =====================================================
-   MOBILE NAVIGATION
+  if (menuToggle && navLinks) {
+    menuToggle.addEventListener("click", () => {
+      menuToggle.classList.toggle("active");
+      navLinks.classList.toggle("active");
+    });
+
+    navLinks.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute("href");
+
+        const target = document.querySelector(targetId);
+
+        if (!target) return;
+
+        /*
+         * Get actual navbar height
+         */
+        const navbar = document.querySelector("nav");
+
+        const navbarHeight = navbar ? navbar.offsetHeight : 0;
+
+        /*
+         * Calculate exact position
+         */
+        const targetPosition =
+          target.getBoundingClientRect().top +
+          window.pageYOffset -
+          navbarHeight -
+          10;
+
+        /*
+         * Scroll to exact section
+         */
+        window.scrollTo({
+          top: targetPosition,
+          behavior: "smooth",
+        });
+
+        /*
+         * Close mobile menu
+         */
+        menuToggle.classList.remove("active");
+        navLinks.classList.remove("active");
+      });
+    });
+  }
+
+  /* =====================================================
+   SCROLL TO TOP
 ===================================================== */
 
-const menuToggle = document.getElementById("menu-toggle");
-const navLinks = document.querySelector(".nav-links");
+  const scrollBtn = document.getElementById("scrollTopBtn");
 
-if (menuToggle && navLinks) {
-  menuToggle.addEventListener("click", () => {
-    menuToggle.classList.toggle("active");
-
-    navLinks.classList.toggle("active");
-  });
-
-  // Close menu after clicking a navigation link
-
-  navLinks.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => {
-      menuToggle.classList.remove("active");
-
-      navLinks.classList.remove("active");
+  if (scrollBtn) {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 400) {
+        scrollBtn.style.display = "flex";
+      } else {
+        scrollBtn.style.display = "none";
+      }
     });
-  });
-}
+
+    scrollBtn.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    });
+  }
+
+  /* =====================================================
+   AOS ANIMATION
+===================================================== */
+
+  if (typeof AOS !== "undefined") {
+    AOS.init({
+      duration: 800,
+      easing: "ease-out-cubic",
+      once: true,
+      offset: 80,
+    });
+  }
+
+  /* =====================================================
+   #19 SCROLL PROGRESS INDICATOR
+===================================================== */
+
+  const scrollProgress = document.getElementById("scroll-progress");
+
+  if (scrollProgress) {
+    function updateScrollProgress() {
+      const scrollTop = window.scrollY;
+
+      const documentHeight =
+        document.documentElement.scrollHeight - window.innerHeight;
+
+      if (documentHeight <= 0) {
+        scrollProgress.style.width = "0%";
+        return;
+      }
+
+      const progress = (scrollTop / documentHeight) * 100;
+
+      scrollProgress.style.width = Math.min(100, Math.max(0, progress)) + "%";
+    }
+
+    window.addEventListener("scroll", updateScrollProgress, { passive: true });
+
+    window.addEventListener("resize", updateScrollProgress);
+
+    updateScrollProgress();
+  }
+});
