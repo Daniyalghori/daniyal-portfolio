@@ -143,3 +143,27 @@ AOS.init({
   duration: 1000,
   once: true,
 });
+/* =====================================================
+   MOBILE NAVIGATION
+===================================================== */
+
+const menuToggle = document.getElementById("menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+if (menuToggle && navLinks) {
+  menuToggle.addEventListener("click", () => {
+    menuToggle.classList.toggle("active");
+
+    navLinks.classList.toggle("active");
+  });
+
+  // Close menu after clicking a navigation link
+
+  navLinks.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      menuToggle.classList.remove("active");
+
+      navLinks.classList.remove("active");
+    });
+  });
+}
