@@ -5294,3 +5294,47 @@ main > .container:first-child .hero-content {
     margin-top: 0 !important;
   }
 }
+/* =========================================================
+   GLOBAL WEBSITE BACKGROUND
+   Same futuristic background as Hero section
+   ========================================================= */
+
+html,
+body {
+  background: #111d3d !important;
+  color: #f8fafc;
+}
+
+/* Keep the same background throughout every section */
+header,
+nav,
+section,
+main,
+footer,
+.about-section,
+.skills-section,
+.projects-section,
+.education-section,
+.achievements-section,
+.internships-section,
+.certifications-section,
+.contact-section {
+  background: transparent !important;
+}
+
+/* Main page background */
+main {
+  background: transparent !important;
+}
+
+/* Preserve the futuristic grid effect */
+body {
+  background-color: #111d3d !important;
+
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px) !important;
+
+  background-size: 40px 40px;
+  background-attachment: fixed;
+}
