@@ -136,7 +136,7 @@ body {
   color: var(--text-color);
   line-height: 1.7;
 
-  padding-top: 80px;
+  padding-top: 0;
 
   position: relative;
 
@@ -540,7 +540,7 @@ body::after {
 
   align-items: center;
 
-  padding: 100px 0 80px;
+  padding: 0 0 80px;
 
   position: relative;
 
@@ -4568,4 +4568,729 @@ button,
 
 html {
   scroll-behavior: smooth;
+}
+/* =====================================================
+   HERO TOP SPACE FIX
+   Remove unnecessary gap below navbar
+===================================================== */
+
+main {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.hero-content {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Remove extra spacing from the first hero container */
+.hero-content:first-child {
+  margin-top: 0 !important;
+}
+
+/* Prevent the hero text from being pushed downward */
+.hero-text {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Keep hero image aligned with the hero text */
+.hero-image {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+/* =====================================================
+   FINAL HERO TOP GAP FIX
+   ===================================================== */
+
+/* Remove any unwanted space before the hero */
+main {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* First container inside main starts immediately */
+main > .container:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Hero content starts immediately below navbar */
+main > .container:first-child .hero-content {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Prevent hero text/image from adding extra space */
+.hero-text,
+.hero-image {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+/* =========================================================
+   MOBILE RESPONSIVE FIX
+   FINAL PORTFOLIO MOBILE OPTIMIZATION
+   ========================================================= */
+
+@media (max-width: 768px) {
+  /* -----------------------------------------------------
+       GLOBAL MOBILE FIX
+       ----------------------------------------------------- */
+
+  html {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+
+  /* -----------------------------------------------------
+       CONTAINER
+       ----------------------------------------------------- */
+
+  .container {
+    width: 100%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  /* -----------------------------------------------------
+       NAVBAR
+       ----------------------------------------------------- */
+
+  header,
+  .navbar,
+  nav {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .navbar .container,
+  header .container,
+  nav .container {
+    min-height: 72px;
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  .logo {
+    font-size: 26px;
+    white-space: nowrap;
+  }
+
+  .nav-links {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* -----------------------------------------------------
+       HERO SECTION
+       ----------------------------------------------------- */
+
+  .hero-content {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .hero-text {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .greeting {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  .hero-text h1 {
+    font-size: clamp(42px, 11vw, 64px);
+    line-height: 1.05;
+    letter-spacing: -1.5px;
+    overflow-wrap: break-word;
+    word-break: normal;
+  }
+
+  .hero-role {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .role-prefix {
+    white-space: normal;
+  }
+
+  .role-divider {
+    margin: 0 3px;
+  }
+
+  .typing-text {
+    display: inline-block;
+    min-width: 0;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+
+  .hero-description {
+    width: 100%;
+    max-width: 100%;
+    font-size: 16px;
+    line-height: 1.75;
+    overflow-wrap: break-word;
+  }
+
+  /* -----------------------------------------------------
+       HERO BUTTONS
+       ----------------------------------------------------- */
+
+  .hero-text .btn,
+  .hero-buttons .btn {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 10px;
+    justify-content: center;
+  }
+
+  /* -----------------------------------------------------
+       SOCIAL ICONS
+       ----------------------------------------------------- */
+
+  .social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  /* -----------------------------------------------------
+       HERO IMAGE
+       ----------------------------------------------------- */
+
+  .hero-image {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-image-frame {
+    width: min(80vw, 330px);
+    height: min(80vw, 330px);
+    max-width: 330px;
+    max-height: 330px;
+  }
+
+  .profile-image {
+    width: 72%;
+    height: 72%;
+    object-fit: cover;
+  }
+
+  /* -----------------------------------------------------
+       HERO STATS
+       ----------------------------------------------------- */
+
+  .hero-stats {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+
+  .stat {
+    min-width: 0;
+    text-align: center;
+  }
+
+  .stat h3 {
+    font-size: 22px;
+  }
+
+  .stat p {
+    font-size: 11px;
+    line-height: 1.4;
+  }
+
+  /* -----------------------------------------------------
+       SECTION TITLES
+       ----------------------------------------------------- */
+
+  .section-title {
+    font-size: clamp(34px, 9vw, 48px);
+    line-height: 1.15;
+    margin-bottom: 25px;
+    overflow-wrap: break-word;
+  }
+
+  .section-subtitle {
+    font-size: 16px;
+    line-height: 1.7;
+    overflow-wrap: break-word;
+  }
+
+  /* -----------------------------------------------------
+       ABOUT SECTION
+       ----------------------------------------------------- */
+
+  .about-content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .about-text {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .about-text h3 {
+    font-size: 38px;
+    line-height: 1.2;
+    margin-bottom: 28px;
+  }
+
+  .about-text p {
+    width: 100%;
+    max-width: 100%;
+    font-size: 17px;
+    line-height: 1.8;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+
+  .about-info {
+    width: 100%;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .info-item {
+    width: 100%;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+
+  /* -----------------------------------------------------
+       SKILLS
+       ----------------------------------------------------- */
+
+  .skills-category-grid {
+    width: 100%;
+    max-width: 100%;
+    grid-template-columns: 1fr !important;
+  }
+
+  .skill-category {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .skill-category-header {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .skill-items {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .skill-item {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .skill-bar {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  /* -----------------------------------------------------
+       CURRENTLY EXPLORING
+       ----------------------------------------------------- */
+
+  .exploring-header {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .exploring-grid {
+    width: 100%;
+    max-width: 100%;
+    grid-template-columns: 1fr !important;
+  }
+
+  .exploring-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .exploring-content {
+    min-width: 0;
+  }
+
+  .exploring-content p {
+    overflow-wrap: break-word;
+  }
+
+  .exploring-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  /* -----------------------------------------------------
+       PROJECTS
+       ----------------------------------------------------- */
+
+  .projects-grid {
+    width: 100%;
+    max-width: 100%;
+    grid-template-columns: 1fr !important;
+  }
+
+  .project-card {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .project-content {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .project-description {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+
+  .project-highlights {
+    width: 100%;
+    max-width: 100%;
+    grid-template-columns: 1fr !important;
+  }
+
+  .engineering-snapshot {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .snapshot-item {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .snapshot-arrow {
+    transform: rotate(90deg);
+  }
+
+  .project-focus,
+  .tech-stack,
+  .achievement-projects,
+  .achievement-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  /* -----------------------------------------------------
+       EDUCATION
+       ----------------------------------------------------- */
+
+  .education-card {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .education-content {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .education-content h3 {
+    font-size: 27px;
+    line-height: 1.3;
+  }
+
+  .education-content h4 {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .education-details {
+    width: 100%;
+    max-width: 100%;
+    grid-template-columns: 1fr !important;
+  }
+
+  /* -----------------------------------------------------
+       ACHIEVEMENTS
+       ----------------------------------------------------- */
+
+  .achievement-grid {
+    width: 100%;
+    max-width: 100%;
+    grid-template-columns: 1fr !important;
+  }
+
+  .achievement-card {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .achievement-card p {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+
+  /* -----------------------------------------------------
+       INTERNSHIPS
+       ----------------------------------------------------- */
+
+  .internships-grid {
+    width: 100%;
+    max-width: 100%;
+    grid-template-columns: 1fr !important;
+  }
+
+  .internship-card {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .internship-content {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .internship-description {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+
+  .internship-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  /* -----------------------------------------------------
+       CERTIFICATIONS
+       ----------------------------------------------------- */
+
+  .certificate-grid {
+    width: 100%;
+    max-width: 100%;
+    grid-template-columns: 1fr !important;
+  }
+
+  .certificate-card {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  /* -----------------------------------------------------
+       CONTACT
+       ----------------------------------------------------- */
+
+  .contact-container {
+    width: 100%;
+    max-width: 100%;
+    grid-template-columns: 1fr !important;
+    gap: 35px;
+  }
+
+  .contact-info,
+  .contact-form {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .contact-item {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .contact-item p,
+  .contact-item a {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .contact-form button {
+    width: 100%;
+  }
+
+  /* -----------------------------------------------------
+       FOOTER
+       ----------------------------------------------------- */
+
+  .footer-content {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .footer-content p {
+    font-size: 14px;
+    line-height: 1.7;
+    overflow-wrap: break-word;
+  }
+
+  /* -----------------------------------------------------
+       SCROLL TO TOP
+       ----------------------------------------------------- */
+
+  #scrollTopBtn {
+    position: fixed !important;
+    right: 18px !important;
+    bottom: 80px !important;
+    width: 48px !important;
+    height: 48px !important;
+    z-index: 9999 !important;
+  }
+
+  /* -----------------------------------------------------
+       AOS / ANIMATION OVERFLOW FIX
+       ----------------------------------------------------- */
+
+  [data-aos] {
+    max-width: 100%;
+  }
+}
+
+/* =========================================================
+   SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 480px) {
+  .container {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  .hero-text h1 {
+    font-size: 40px;
+    line-height: 1.05;
+  }
+
+  .hero-role {
+    font-size: 16px;
+  }
+
+  .hero-description {
+    font-size: 15px;
+    line-height: 1.75;
+  }
+
+  .about-text h3 {
+    font-size: 34px;
+  }
+
+  .about-text p {
+    font-size: 16px;
+    line-height: 1.75;
+  }
+
+  .section-title {
+    font-size: 34px;
+  }
+
+  .hero-image-frame {
+    width: 280px;
+    height: 280px;
+  }
+
+  .hero-stats {
+    gap: 5px;
+  }
+
+  .stat h3 {
+    font-size: 20px;
+  }
+
+  .stat p {
+    font-size: 10px;
+  }
+}
+@media (max-width: 768px) {
+  #about {
+    padding-top: 45px !important;
+    padding-bottom: 50px !important;
+  }
+
+  #about .section-title {
+    margin-top: 0 !important;
+    margin-bottom: 55px !important;
+  }
+
+  #about .about-content {
+    margin-top: 0 !important;
+  }
+
+  #about .about-text h3 {
+    margin-top: 0 !important;
+  }
 }
